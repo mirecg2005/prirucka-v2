@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import ShareModal from "./ShareModal";
 import { useLanguage } from "@/i18n/LanguageContext";
+import lidlLogo from "../../../public/lidl-logo.png";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
@@ -22,7 +23,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           {/* Originálne Lidl Logo */}
           <div className="w-10 h-10 flex items-center justify-center shrink-0">
-            <Image src="/lidl-logo.png" alt="Lidl Logo" width={40} height={40} className="w-full h-full object-contain" />
+            <Image src={lidlLogo} alt="Lidl Logo" className="w-full h-full object-contain" />
           </div>
           
           <div className="flex flex-col">
