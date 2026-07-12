@@ -187,7 +187,7 @@ const dict = {
 export default function ServicePage() {
   const { language } = useLanguage();
   const t = dict[language as keyof typeof dict];
-  const { state: ttsState, play: ttsPlay, pause: ttsPause, resume: ttsResume, stop: ttsStop, currentText } = useTTS();
+  const { state: ttsState, play: ttsPlay, pause: ttsPause, resume: ttsResume, stop: ttsStop } = useTTS();
 
   const [activePlayer, setActivePlayer] = useState<"guide" | "proc" | null>(null);
 

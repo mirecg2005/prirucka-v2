@@ -19,9 +19,20 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
   const isSpeakingRef = useRef(false);
   const isPausedRef = useRef(false);
 
+  const stopPlaying = () => {
+    if (synthRef.current) {
+      synthRef.current.cancel();
+    }
+    isSpeakingRef.current = false;
+    isPausedRef.current = false;
+    setIsPlaying(false);
+    setIsPaused(false);
+    currentIndexRef.current = 0;
+  };
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      synthRef.current = window.speechSynthesis;
+    if (!('speechSynthesis' in window)) {
+      setHasSupport(false);
     }
     return () => {
       stopPlaying();
