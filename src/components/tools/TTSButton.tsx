@@ -33,6 +33,8 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
   useEffect(() => {
     if (!('speechSynthesis' in window)) {
       console.warn("TTS nie je podporované.");
+    } else {
+      synthRef.current = window.speechSynthesis;
     }
     return () => {
       stopPlaying();
