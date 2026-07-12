@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   themeColor: "#ffffff",
   appleWebApp: {
+    capable: true,
     title: "Príručka",
     statusBarStyle: "black-translucent",
   },

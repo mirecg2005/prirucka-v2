@@ -49,10 +49,10 @@ export default function QuickActionCard({ title, subtitle, icon: Icon, onClick, 
       </div>
 
       <div className="flex flex-col relative z-10">
-        <h3 className="font-bold text-white text-[15px] md:text-base leading-tight mb-1">
+        <h3 className="font-extrabold text-white text-lg md:text-xl leading-tight mb-1 drop-shadow-sm">
           {title}
         </h3>
-        <p className="text-white/80 text-xs leading-snug">
+        <p className="text-white/90 text-sm leading-snug font-medium">
           {subtitle}
         </p>
       </div>
