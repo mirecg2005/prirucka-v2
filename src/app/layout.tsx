@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Príručka pre Vodičov",
   description: "Základná príručka pre vodičov flotily.",
-  manifest: "/manifest.json",
+  manifest: "/prirucka-v2/manifest.json",
   themeColor: "#ffffff",
   appleWebApp: {
     capable: true,
