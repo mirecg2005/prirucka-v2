@@ -32,7 +32,7 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
 
   useEffect(() => {
     if (!('speechSynthesis' in window)) {
-      setHasSupport(false);
+      console.warn("TTS nie je podporované.");
     }
     return () => {
       stopPlaying();
