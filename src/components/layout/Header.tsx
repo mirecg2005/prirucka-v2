@@ -5,6 +5,7 @@ import { Moon, Sun, QrCode } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import ShareModal from "./ShareModal";
+import InstallButton from "./InstallButton";
 import { useLanguage } from "@/i18n/LanguageContext";
 import lidlLogo from "../../../public/lidl-logo.png";
 
@@ -41,6 +42,8 @@ export default function Header() {
           >
             {language}
           </button>
+
+          <InstallButton />
 
           <button 
             onClick={() => setIsShareOpen(true)}
