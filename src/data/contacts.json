@@ -1,0 +1,106 @@
+[
+  {
+    "id": "ayvens",
+    "name": { "sk": "Ayvens / LeasePlan", "en": "Ayvens / LeasePlan" },
+    "role": { "sk": "Asistenčná linka – NONSTOP", "en": "Assistance Line – 24/7" },
+    "phones": [
+      {
+        "number": "0850888777",
+        "label": { "sk": "Volať na Slovensku", "en": "Call in Slovakia" },
+        "type": "primary"
+      },
+      {
+        "number": "+421904333230",
+        "label": { "sk": "Volať zo zahraničia", "en": "Call from abroad" },
+        "type": "international"
+      }
+    ],
+    "priority": 1
+  },
+  {
+    "id": "marsh",
+    "name": { "sk": "MARSH Broker", "en": "MARSH Broker" },
+    "role": { "sk": "Hlásenie poistných udalostí (KASKO)", "en": "Insurance Claims Reporting" },
+    "phones": [
+      {
+        "number": "+421902966689",
+        "label": { "sk": "Infolinka", "en": "Infoline" },
+        "type": "primary"
+      }
+    ],
+    "emails": [
+      {
+        "address": "autoskody@marsh.com",
+        "label": { "sk": "E-mail pre hlásenie škôd", "en": "Email for claims" }
+      }
+    ],
+    "priority": 2
+  },
+  {
+    "id": "mobility",
+    "name": { "sk": "Oddelenie Mobility Lidl", "en": "Lidl Mobility Department" },
+    "role": { "sk": "Správa vozového parku", "en": "Fleet Management" },
+    "phones": [],
+    "emails": [
+      {
+        "address": "mobilita@lidl.sk",
+        "label": { "sk": "Všeobecné požiadavky", "en": "General Requests" }
+      }
+    ],
+    "priority": 3
+  },
+  {
+    "id": "kooperativa",
+    "name": { "sk": "Kooperativa (Záložný odťah)", "en": "Kooperativa (Backup Towing)" },
+    "role": { "sk": "Asistenčná služba k PZP", "en": "Liability Insurance Assistance" },
+    "phones": [
+      {
+        "number": "18118",
+        "label": { "sk": "Volať na Slovensku", "en": "Call in Slovakia" },
+        "type": "primary"
+      },
+      {
+        "number": "+421263532236",
+        "label": { "sk": "Volať zo zahraničia", "en": "Call from abroad" },
+        "type": "international"
+      }
+    ],
+    "priority": 4
+  },
+  {
+    "id": "emergency",
+    "name": { "sk": "Záchranné zložky", "en": "Emergency Services" },
+    "role": { "sk": "Univerzálna núdzová linka", "en": "Universal Emergency Line" },
+    "phones": [
+      {
+        "number": "112",
+        "label": { "sk": "Integrovaný záchranný systém", "en": "Integrated Rescue System" },
+        "type": "primary"
+      },
+      {
+        "number": "158",
+        "label": { "sk": "Polícia SR", "en": "Police" },
+        "type": "backup"
+      },
+      {
+        "number": "155",
+        "label": { "sk": "Záchranná zdravotná služba", "en": "Ambulance" },
+        "type": "backup"
+      }
+    ],
+    "priority": 0
+  },
+  {
+    "id": "fines",
+    "name": { "sk": "Oddelenie pokút", "en": "Fines Department" },
+    "role": { "sk": "Dokladovanie zaplatenia pokút", "en": "Fine Payment Documentation" },
+    "phones": [],
+    "emails": [
+      {
+        "address": "pokuty@lidl.sk",
+        "label": { "sk": "Zaslanie dokladu o úhrade", "en": "Send payment proof" }
+      }
+    ],
+    "priority": 5
+  }
+]

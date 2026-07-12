@@ -1,0 +1,502 @@
+[
+  {
+    "id": "law_01",
+    "title": {
+      "sk": "Alkohol",
+      "en": "Alcohol"
+    },
+    "keywords": {
+      "sk": "alkohol, promile, pivo, vino, dych, vypit, alkoholu, promila, drink",
+      "en": "alcohol, beer, wine, breath"
+    },
+    "reference": "§ 4 ods. 2 písm. c) zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Od 150 € do 1000 €, zákaz činnosti do 5 rokov (nad 1 ‰ trestný čin s hrozbou väzenia)",
+      "en": "From €150 to €1000, driving ban up to 5 years (above 1 ‰ is a criminal offense)"
+    },
+    "content": {
+      "sk": "Na Slovensku platí <strong>nulová tolerancia</strong> alkoholu za volantom. Vodič nesmie požiť alkohol pred jazdou ani počas nej. Odmietnutie dychovej skúšky sa posudzuje ako spáchanie trestného činu pod vplyvom návykovej látky.",
+      "en": "Slovakia has <strong>zero tolerance</strong> for alcohol. A driver must not consume alcohol before or during driving. Refusing a breath test is treated as a criminal offense."
+    }
+  },
+  {
+    "id": "law_02",
+    "title": {
+      "sk": "Rychlost",
+      "en": "Speed"
+    },
+    "keywords": {
+      "sk": "rychlost, prekrocenie, obec, rychlo, km/h, dialnica, mimo obce",
+      "en": "speed, limit, highway, city"
+    },
+    "reference": "§ 16 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta od 20 € do 800 €, v správnom konaní až do 1000 € a zákaz činnosti",
+      "en": "On-the-spot fine from €20 to €800, up to €1000 and driving ban in administrative proceedings"
+    },
+    "content": {
+      "sk": "Maximálne rýchlosti: <strong>v obci 50 km/h</strong>, <strong>mimo obce 90 km/h</strong>, <strong>na diaľnici 130 km/h</strong> (diaľnica v obci 90 km/h). Rýchlosť jazdy musíte prispôsobiť svojim schopnostiam, vlastnostiam vozidla a stavu vozovky.",
+      "en": "Speed limits: <strong>in built-up areas 50 km/h</strong>, <strong>outside 90 km/h</strong>, <strong>on highways 130 km/h</strong> (highways in city 90 km/h). Speed must be adjusted to road conditions."
+    }
+  },
+  {
+    "id": "law_03",
+    "title": {
+      "sk": "Mobil",
+      "en": "Phone"
+    },
+    "keywords": {
+      "sk": "mobil, telefon, telefonovanie, drzat, volat, sms, pisat, handsfree",
+      "en": "phone, mobile, calling, texting, hands-free"
+    },
+    "reference": "§ 4 ods. 2 písm. m) zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta 150 €, v správnom konaní až 300 € (a možnosť straty VP)",
+      "en": "On-the-spot fine €150, up to €300 in administrative proceedings"
+    },
+    "content": {
+      "sk": "Počas jazdy je prísne zakázané držať v ruke alebo iným spôsobom obsluhovať telefónny prístroj alebo iné hovorové či záznamové zariadenie. Povolené je výhradne používanie <strong>hands-free</strong> sád bez držania prístroja v ruke.",
+      "en": "It is strictly forbidden to hold or operate a mobile phone or other recording device while driving. Only <strong>hands-free</strong> systems are allowed, without holding the device."
+    }
+  },
+  {
+    "id": "law_04",
+    "title": {
+      "sk": "Pneumatiky",
+      "en": "Tires"
+    },
+    "keywords": {
+      "sk": "pneumatiky, zimne, letne, sneh, lad, prezut, prezuvanie, retaze, dezen",
+      "en": "tires, tyres, winter, summer, snow, ice"
+    },
+    "reference": "§ 38 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Zimné pneumatiky (označenie M+S, M.S, M&S alebo alpský symbol) sú povinné pre osobné autá <strong>od 15. novembra do 31. marca</strong>, ak sa na vozovke nachádza <strong>súvislá snehová vrstva, ľad alebo námraza</strong>. Odporúča sa však prezúvať hneď, ako teploty klesnú pod 7 °C.",
+      "en": "Winter tires (marked M+S, M.S, M&S or alpine symbol) are mandatory for passenger cars <strong>from Nov 15 to Mar 31</strong> if there is a <strong>continuous layer of snow, ice or frost</strong> on the road."
+    }
+  },
+  {
+    "id": "law_05",
+    "title": {
+      "sk": "Ulicka",
+      "en": "Emergency"
+    },
+    "keywords": {
+      "sk": "ulicka, zachranarska, koridor, prejazd, sanitka, policia, hasici",
+      "en": "emergency, corridor, lane, ambulance, towing"
+    },
+    "reference": "§ 10 ods. 11 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Za nevytvorenie 99 €, za neoprávnené zneužitie prejazdu až do 300 €",
+      "en": "€99 for not creating, up to €300 for unauthorized usage of the corridor"
+    },
+    "content": {
+      "sk": "Pri tvorení kolóny na diaľnici alebo rýchlostnej ceste sú vodiči povinní vytvoriť <strong>záchranársku uličku</strong> (núdzový koridor) uprostred. Vodiči v ľavom pruhu sa tlačia čo najviac doľava, vodiči v ostatných pruhoch čo najviac doprava.",
+      "en": "When a traffic jam forms on a highway, drivers are obliged to create an <strong>emergency corridor</strong> in the middle. Drivers in the left lane move as far left as possible, others as far right as possible."
+    }
+  },
+  {
+    "id": "law_06",
+    "title": {
+      "sk": "Kruhovy",
+      "en": "Roundabout"
+    },
+    "keywords": {
+      "sk": "kruhovy, objazd, kruhovom, smerovka, blikat, prednost",
+      "en": "roundabout, indicator, blinker, priority"
+    },
+    "reference": "§ 30 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Smerové svetlo (smerovku) dávate <strong>iba pred výjazdom</strong> z kruhového objazdu (pri opúšťaní), aby ostatní vodiči vedeli, že uvoľňujete kruhový objazd. Pri vjazde na kruhový objazd sa smerovka nedáva. Prednosť na kruhovom objazde upravuje dopravné značenie.",
+      "en": "Direction indicator (blinker) is given <strong>only when exiting</strong> the roundabout. Do not use blinkers when entering. Right of way is governed by road signs."
+    }
+  },
+  {
+    "id": "law_07",
+    "title": {
+      "sk": "Pasy",
+      "en": "Seatbelt"
+    },
+    "keywords": {
+      "sk": "pasy, pas, priputat, pripútanie, bezpecnostny, airbag",
+      "en": "seatbelt, belt, fasten"
+    },
+    "reference": "§ 8 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta 50 €",
+      "en": "On-the-spot fine €50"
+    },
+    "content": {
+      "sk": "Osoba sediaca na sedadle povinne vybavenom bezpečnostným pásom je povinná ho počas jazdy <strong>použiť</strong>. Výnimku majú napr. inštruktori autoškoly, príslušníci záchranných zložiek pri plnení úloh alebo osoby s lekárskym potvrdením.",
+      "en": "Every person sitting in a seat equipped with a seatbelt must <strong>use it</strong> during driving. Exceptions apply to driving instructors, emergency responders on duty, or persons with medical waivers."
+    }
+  },
+  {
+    "id": "law_08",
+    "title": {
+      "sk": "Parkovanie",
+      "en": "Parking"
+    },
+    "keywords": {
+      "sk": "parkovanie, chodnik, chodniku, státie, zastavenie, chodci, chodce",
+      "en": "parking, sidewalk, pavement"
+    },
+    "reference": "§ 52 ods. 2 zákona č. 8/2009 Z. z. (novela platná od 1. 10. 2023)",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Od 1. októbra 2023 platí <strong>úplný zákaz parkovania na chodníkoch</strong> pre motorové vozidlá. Parkovanie na chodníku je povolené len na miestach, kde to **výslovne povoľuje dopravné značenie**.",
+      "en": "Since October 1, 2023, there is a <strong>complete ban on parking on pavements/sidewalks</strong> for motor vehicles. Parking on sidewalks is allowed only where explicitly permitted by road signs."
+    }
+  },
+  {
+    "id": "law_09",
+    "title": {
+      "sk": "Chodec",
+      "en": "Pedestrian"
+    },
+    "keywords": {
+      "sk": "chodec, chodci, priechod, zebra, prednost, prechádzanie",
+      "en": "pedestrian, pedestrians, crossing, priority"
+    },
+    "reference": "§ 4 ods. 1 písm. f) zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta od 30 € do 150 €",
+      "en": "On-the-spot fine from €30 to €150"
+    },
+    "content": {
+      "sk": "Vodič je povinný <strong>dať prednosť chodcovi</strong>, ktorý vstúpil na priechod pre chodcov alebo naň zjavne hodlá vstúpiť. Nesmie ho pritom ohroziť. Táto povinnosť neplatí pre vodiča električky.",
+      "en": "The driver is obliged to <strong>give way to a pedestrian</strong> who has entered or is clearly intending to enter a pedestrian crossing. The driver must not endanger them. This does not apply to tram drivers."
+    }
+  },
+  {
+    "id": "law_10",
+    "title": {
+      "sk": "Zver",
+      "en": "Animal"
+    },
+    "keywords": {
+      "sk": "zver, zrazka, lesna, srna, diviak, jelen, nehoda so zverou, zrazka so zverou, zvierata, zverou, accident with animal",
+      "en": "animal, deer, collision, wildlife"
+    },
+    "reference": "§ 49 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "0 € (zrážka so zverou je škodová udalosť, nie je to priestupok vodiča)",
+      "en": "€0 (collision with wildlife is a damage event, not a driver traffic offense)"
+    },
+    "content": {
+      "sk": "Pri zrážke so zverou ide o škodovú udalosť. **Vodič je však vždy povinný volať políciu (158)**. Polícia upovedomí poľovnícke združenie na odstránenie zveri. **Upozornenie:** Zrazenú zver nikdy neberte so sebou (ide o trestný čin pytliactva).",
+      "en": "A collision with wild animals is a damage event. **However, the driver must always call the police (158)**. The police will notify local hunters. **Warning:** Never take the animal with you (it is considered poaching)."
+    }
+  },
+  {
+    "id": "law_11",
+    "title": {
+      "sk": "Zipsovanie",
+      "en": "Zipper"
+    },
+    "keywords": {
+      "sk": "zipsovanie, zips, striedave, radenie, zuzenie, pruh, pruhy, zipper merge",
+      "en": "zipper, merge, lane narrowing"
+    },
+    "reference": "§ 10 ods. 10 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Zipsovanie (striedavé radenie) je **povinné** pri zužovaní pruhov alebo pri prekážke. Vodič v priebežnom pruhu je povinný umožniť vodičovi v končiacom pruhu striedavé zaradenie, a to tesne pred miestom zúženia.",
+      "en": "Zipper merging is **mandatory** when lanes merge or at an obstacle. The driver in the continuous lane must allow one driver from the ending lane to merge just before the narrowing."
+    }
+  },
+  {
+    "id": "law_12",
+    "title": {
+      "sk": "Predbiehanie",
+      "en": "Overtaking"
+    },
+    "keywords": {
+      "sk": "predbiehanie, predchadzanie, plna ciara, zakaz",
+      "en": "overtaking, passing, solid line, forbidden"
+    },
+    "reference": "§ 15 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Od 60 € do 300 €, možnosť zákazu činnosti až na 2 roky",
+      "en": "From €60 to €300, possible driving ban up to 2 years"
+    },
+    "content": {
+      "sk": "Predchádza sa zásadne **vľavo**. Predchádzať je zakázané: ak nemáte dostatočný výhľad, cez plnú čiaru, na priechode pre chodcov, na priecestí, na križovatke (s výnimkami) a tam, kde je to zakázané značkou.",
+      "en": "Overtaking is performed on the **left**. Overtaking is forbidden: if you don't have clear view, across a solid line, on pedestrian crossings, junctions, or where forbidden by signs."
+    }
+  },
+  {
+    "id": "law_13",
+    "title": {
+      "sk": "Hmlovky",
+      "en": "Fog"
+    },
+    "keywords": {
+      "sk": "hmlovky, hmla, hmly, dazd, snezenie, svietenie, fog lights",
+      "en": "fog, lights, rain, snowing"
+    },
+    "reference": "§ 32 ods. 3 zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta od 10 € do 30 €",
+      "en": "On-the-spot fine from €10 to €30"
+    },
+    "content": {
+      "sk": "Predné a zadné hmlové svetlá sa smú používať **výhradne za hmly, sneženia alebo za dažďa**. Používanie hmloviek za bežnej viditeľnosti (napr. za jasnej noci alebo v kolóne) oslňuje ostatných a je zakázané.",
+      "en": "Front and rear fog lights may be used **only during fog, snow, or heavy rain**. Using fog lights under normal visibility (e.g. clear night or in a traffic queue) glares others and is forbidden."
+    }
+  },
+  {
+    "id": "law_14",
+    "title": {
+      "sk": "Dezen",
+      "en": "Tread"
+    },
+    "keywords": {
+      "sk": "dezen, hlbka, miera, opotrebenie, milimetre, mm",
+      "en": "tread, depth, wear, millimeters"
+    },
+    "reference": "Príloha č. 1 k vyhláške č. 134/2018 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 € a odobratie osvedčenia o evidencii (technického preukazu)",
+      "en": "On-the-spot fine up to €50 and retention of registration certificate"
+    },
+    "content": {
+      "sk": "Minimálna predpísaná hĺbka dezénu v SR: **1,6 mm pre letné pneumatiky** a **3 mm pre zimné pneumatiky** (na snehu/ľade). Odporúčaná bezpečná hĺbka je však 3 mm pre letné a 4 mm pre zimné pneu.",
+      "en": "Minimum legal tread depth in SK: **1.6 mm for summer tires** and **3 mm for winter tires** (on snow/ice). Recommended safe depth is 3 mm for summer and 4 mm for winter."
+    }
+  },
+  {
+    "id": "law_15",
+    "title": {
+      "sk": "Kolobezka",
+      "en": "Scooter"
+    },
+    "keywords": {
+      "sk": "kolobezka, elektrokolobezka, kolobezke",
+      "en": "scooter, e-scooter, escooter"
+    },
+    "reference": "§ 55a zákona č. 8/2009 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Na elektrokolobežke smie jazdiť iba **jedna osoba**. Vek nad 15 rokov je povinný (okrem cyklotrás a obytných zón). Tolerancia alkoholu je **max. 0,5 ‰** (iba pri jazde v obci alebo na cyklotrase). Jazdiť sa musí po cyklochodníku alebo pravom okraji cesty.",
+      "en": "Only **one person** may ride an e-scooter. Age over 15 is mandatory (except cycle paths/residential zones). Alcohol tolerance is **max. 0.5 ‰** (only in municipality/cycle path). Must ride on right edge of road."
+    }
+  },
+  {
+    "id": "law_16",
+    "title": {
+      "sk": "Lekarnicka",
+      "en": "Kit"
+    },
+    "keywords": {
+      "sk": "lekarnicka, vybava, povinna, trojuholnik, vesta",
+      "en": "kit, equipment, mandatory, triangle, first-aid, first aid"
+    },
+    "reference": "Vyhláška č. 134/2018 Z. z.",
+    "fine": {
+      "sk": "Bloková pokuta do 50 €",
+      "en": "On-the-spot fine up to €50"
+    },
+    "content": {
+      "sk": "Povinná výbava osobného vozidla v SR zahŕňa: **homologovaný výstražný trojuholník**, **bezpečnostný reflexný odev (vestu)** pre každého člena posádky (v dosahu zo sedadla), **náhradné koleso/sadu na opravu defektu** a **nepoškodenú lekárničku**.",
+      "en": "Mandatory equipment in SK includes: **certified warning triangle**, **reflective safety clothing (vest)** for each passenger (within reach from seat), **spare wheel/puncture repair kit**, and a **first-aid kit**."
+    }
+  },
+  {
+    "id": "law_17",
+    "title": {
+      "sk": "Defekt",
+      "en": "Flat tire"
+    },
+    "keywords": {
+      "sk": "defekt, koleso, prepichnuta, vymena, guma, dusa, pneu, pneumatika",
+      "en": "flat tire, puncture, wheel"
+    },
+    "reference": "§ 40 zákona č. 8/2009 Z. z. a Fleetové pravidlá",
+    "fine": {
+      "sk": "0 € (asistencia Ayvens je pre zamestnancov zadarmo; pokuta do 50 € hrozí, ak pri oprave na ceste neumiestnite trojuholník)",
+      "en": "€0 (Ayvens assistance is free for employees; fine up to €50 only if warning triangle is not placed during road repair)"
+    },
+    "content": {
+      "sk": "Pri defekte zastavte na bezpečnom mieste, zapnite výstražné svetlá, oblečte si vestu a umiestnite trojuholník (na diaľnici 100 m za auto). **Ako vodič Lidl nemusíte meniť koleso sami:** zavolajte asistenciu Ayvens (0850 888 777), ktorá defekt vyrieši za vás (výmena alebo odtiahnutie).",
+      "en": "In case of a flat tire, stop safely, turn on hazard lights, wear a vest, and place the warning triangle (100 m on highways). **As a Lidl driver, you do not need to change the wheel yourself:** call Ayvens assistance (0850 888 777) for a free repair or towing."
+    }
+  },
+  {
+    "id": "law_18",
+    "title": {
+      "sk": "Skrabance",
+      "en": "Parking damage"
+    },
+    "keywords": {
+      "sk": "skrabance, skrabance na parkovisku, parkovisko, tukance, skoda na parkovisku, neznamy vinnik, poskodenie na parkovisku, preliacina",
+      "en": "parking damage, scratches, unknown culprit"
+    },
+    "reference": "§ 65 a § 66 zákona č. 8/2009 Z. z. (Útek z miesta)",
+    "fine": {
+      "sk": "0 € pre poškodeného; ak vy spôsobíte škodu a ujdete: od 300 € do 1300 € a zákaz činnosti na 1 až 5 rokov!",
+      "en": "€0 for victim; if you cause damage and leave: €300 to €1300 and driving ban for 1 to 5 years!"
+    },
+    "content": {
+      "sk": "Ak nájdete auto poškodené na parkovisku bez lístka, nahláste to ako poistnú udalosť (MARSH). **Upozornenie:** Ak vy spôsobíte aj drobný škrabanec inému autu a odídete bez nahlásenia majiteľovi alebo polícii, je to posudzované ako **útek z miesta dopravnej nehody** s fatálnymi trestami.",
+      "en": "If you find your car damaged in a parking lot, report it to MARSH. **Warning:** If you scrape another car and leave without notifying the owner or calling the police, it is classified as **hit and run** with severe penalties."
+    }
+  },
+  {
+    "id": "law_19",
+    "title": {
+      "sk": "Kamienok",
+      "en": "Stone chip"
+    },
+    "keywords": {
+      "sk": "kamienok, sklo, celne sklo, prasklina, celnom, prasknute, puknute",
+      "en": "stone chip, windshield, windscreen, crack"
+    },
+    "reference": "§ 4 písm. a) vyhlášky č. 134/2018 Z. z. (Technická nespôsobilosť)",
+    "fine": {
+      "sk": "Bloková pokuta 50 € a zadržanie osvedčenia o evidencii (technického preukazu)",
+      "en": "On-the-spot fine €50 and retention of registration certificate"
+    },
+    "content": {
+      "sk": "Poškodenie čelného skla odleteným kamienkom (ak je prasklina v stieranej zóne väčšia ako 2 cm) robí vozidlo **technicky nespôsobilým**. S takýmto autom nesmiete jazdiť. Škodovú udalosť hneď nahláste maklérovi MARSH a sklo dajte vymeniť/opraviť.",
+      "en": "A cracked windshield (if the crack is in the wiper zone and larger than 2 cm) makes the vehicle **technically unfit for road**. You must not drive it. Report it to MARSH and arrange replacement."
+    }
+  },
+  {
+    "id": "law_20",
+    "title": {
+      "sk": "Palivo",
+      "en": "Wrong fuel"
+    },
+    "keywords": {
+      "sk": "palivo, nespravne palivo, zmena paliva, benzin do nafty, nafta do benzinu, natankoval",
+      "en": "wrong fuel, misfueling"
+    },
+    "reference": "Prevádzkový poriadok flotily / Fleet guidelines",
+    "fine": {
+      "sk": "Podľa leasingovej zmluvy (ak naštartujete motor, hrozí zosobnenie celej škody na motore vodičovi!)",
+      "en": "According to lease terms (starting the engine risk charging the entire engine repair cost to the driver!)"
+    },
+    "content": {
+      "sk": "Ak natankujete nesprávne palivo (napr. benzín do naftového motora), **NENAŠTARTOVALI MOTOR!** Nespúšťajte ani zapaľovanie (iDrive). Okamžite zavolajte asistenčnú službu Ayvens (0850 888 777) na odtiahnutie a odsatí paliva. Ak nenaštartujete, motor sa nepoškodí.",
+      "en": "If you fill the wrong fuel, **DO NOT START THE ENGINE!** Do not even turn on the ignition (iDrive). Call Ayvens assistance (0850 888 777) immediately to tow the car and drain the fuel. If you don't start the engine, it won't be damaged."
+    }
+  },
+  {
+    "id": "law_21",
+    "title": {
+      "sk": "Odtiahnutie",
+      "en": "Towed"
+    },
+    "keywords": {
+      "sk": "odtiahnutie, odtiahnute, odtiahli, 159, mestska policia, kde je auto",
+      "en": "towed, towing, city police"
+    },
+    "reference": "§ 25 zákona č. 8/2009 Z. z. a zákon o obecnej polícii",
+    "fine": {
+      "sk": "Pokuta za parkovanie do 50 € + poplatok za odťah (zvyčajne 100 € - 150 €) hradí vodič",
+      "en": "Parking fine up to €50 + towing fee (usually €100 - €150) paid by the driver"
+    },
+    "content": {
+      "sk": "Ak po príchode na miesto parkovania nenájdete svoje auto, najskôr volajte **Mestskú políciu (159)**, ktorá preverí, či vozidlo nebolo odtiahnuté. Odťah a pokuta za nesprávne parkovanie idú na vrub vodiča a nepreplácajú sa ako služobný náklad.",
+      "en": "If your car is missing, call the **City Police (159)** to check if it was towed. The towing fee and the parking fine are paid by the driver and cannot be claimed as business expenses."
+    }
+  },
+  {
+    "id": "law_22",
+    "title": {
+      "sk": "Servis",
+      "en": "Booking"
+    },
+    "keywords": {
+      "sk": "servis, oprava, prihlasenie, nahlasenie, nahlasim, objednat, objednanie, servisu, opravy",
+      "en": "booking, service, repair, appointment"
+    },
+    "reference": "Flotilové pravidlá Lidl",
+    "fine": {
+      "sk": "Bez pokuty (povinnosť dodržiavať servisné intervaly - nedodržanie môže byť zosobnené!)",
+      "en": "No fine (mandatory service intervals must be kept - failure can be charged!)"
+    },
+    "content": {
+      "sk": "Pre objednanie na pravidelný servis, výmenu čelného skla (Hornet) alebo opravu volajte zákaznícku linku Ayvens/LeasePlan: **0850 888 777** (zo zahraničia **+421 904 333 230**). Pre VW je zmluvná sieť TODOS, pre BMW zmluvní partneri BMW.",
+      "en": "To book regular service, windshield replacement (Hornet), or repairs, call the Ayvens/LeasePlan hotline: **0850 888 777** (from abroad **+421 904 333 230**). VW uses TODOS network, BMW uses BMW partners."
+    }
+  },
+  {
+    "id": "law_23",
+    "title": {
+      "sk": "Cistenie",
+      "en": "Car wash"
+    },
+    "keywords": {
+      "sk": "cistenie, umyvanie, ciste, umyvaren, umyt, vysavanie, spinave",
+      "en": "car wash, cleaning, wash"
+    },
+    "reference": "Flotilové pravidlá Lidl",
+    "fine": {
+      "sk": "Zákaz čistenia interiéru na náklady Lidl!",
+      "en": "Prohibition of interior cleaning at Lidl expenses!"
+    },
+    "content": {
+      "sk": "Užívateľ je povinný udržiavať vozidlo čisté. **Dôležité:** Umývanie exteriéru je povolené **najlacnejším programom** na čerpacích staniciach **Shell a OMV** pomocou palivovej karty. Čistenie/tepovanie interiéru na náklady spoločnosti Lidl je **prísne zakázané**.",
+      "en": "Drivers must keep the vehicle clean. **Important:** Exterior washing is allowed using the **cheapest program** at **Shell and OMV** stations using the fuel card. Interior cleaning at Lidl expense is **strictly forbidden**."
+    }
+  },
+  {
+    "id": "law_24",
+    "title": {
+      "sk": "Kniha jazd",
+      "en": "Logbook"
+    },
+    "keywords": {
+      "sk": "kniha jazd, nahlasovanie kilometrov, kilometre, km, sukromne, sluzobne",
+      "en": "logbook, trips, mileage"
+    },
+    "reference": "Flotilové pravidlá Lidl",
+    "fine": {
+      "sk": "Upozornenie: Povinnosť nahlásiť kilometre do 3. dňa nasledujúceho mesiaca!",
+      "en": "Warning: Mandatory mileage report by 3rd day of the following month!"
+    },
+    "content": {
+      "sk": "Všetky služobné aj súkromné jazdy musíte evidovať. Stav tachometra a rozdelenie kilometrov musíte nahlásiť prostredníctvom aplikácie/systému najneskôr do **3. dňa** nasledujúceho mesiaca.",
+      "en": "All business and private trips must be recorded. Odometer readings and trip division must be reported via the app/system by the **3rd day** of the following month."
+    }
+  },
+  {
+    "id": "law_25",
+    "title": {
+      "sk": "Znamka",
+      "en": "Vignette"
+    },
+    "keywords": {
+      "sk": "znamka, znamky, dialnicna, dialnicnej, eznamka, overenie, kontrola, kontrolu",
+      "en": "vignette, vignettes"
+    },
+    "reference": "Zákon č. 488/2013 Z. z. (o diaľničnej známke)",
+    "fine": {
+      "sk": "Bloková pokuta od 50 € do 200 € (v správnom konaní od 150 € do 500 €)",
+      "en": "On-the-spot fine from €50 to €200 (in administrative proceedings €150 to €500)"
+    },
+    "content": {
+      "sk": "Pre jazdu na slovenských diaľniciach a rýchlostných cestách je povinná platná elektronická diaľničná známka. **Platnosť známky pre vaše EČV si môžete overiť priamo tu:** <a href=\"https://eznamka.sk/selfcare/modification/select/select-vignettes/?operation=Check\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline text-blue-600 font-bold dark:text-blue-400\">Otvoriť kontrolu platnosti na eznamka.sk</a>.",
+      "en": "A valid electronic vignette is mandatory for driving on Slovak highways. **You can verify the vignette validity for your license plate directly here:** <a href=\"https://eznamka.sk/selfcare/modification/select/select-vignettes/?operation=Check\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline text-blue-600 font-bold dark:text-blue-400\">Open validity check on eznamka.sk</a>."
+    }
+  }
+]
