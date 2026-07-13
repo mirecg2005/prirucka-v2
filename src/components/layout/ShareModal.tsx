@@ -15,9 +15,10 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // In production, this would be the actual domain. During dev, it's localhost or the Vercel URL.
+      // Použijeme celý odkaz (href) namiesto len domény (origin), 
+      // aby sa správne zachytil aj podpriečinok ako /prirucka-v2/
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setAppUrl(window.location.origin);
+      setAppUrl(window.location.href);
     }
   }, []);
 
