@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 };
 
 import { TTSProvider } from "@/context/TTSContext";
+import { FontSizeProvider } from "@/context/FontSizeContext";
 
 export default function RootLayout({
   children,
@@ -39,9 +40,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
-            <TTSProvider>
-              <AppShell>{children}</AppShell>
-            </TTSProvider>
+            <FontSizeProvider>
+              <TTSProvider>
+                <AppShell>{children}</AppShell>
+              </TTSProvider>
+            </FontSizeProvider>
           </LanguageProvider>
         </ThemeProvider>
       </body>
