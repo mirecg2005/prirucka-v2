@@ -115,7 +115,9 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
         .replace(/AdBlue/gi, 'Adblú')
         .replace(/\b158\b/g, 'sto päťdesiat osem')
         .replace(/\b112\b/g, 'sto dvanásť')
-        .replace(/\b150\b/g, 'sto päťdesiat');
+        .replace(/\b150\b/g, 'sto päťdesiat')
+        .replace(/MARSH/g, 'Marš')
+        .replace(/Marsh/g, 'Marš');
     }
 
     // Rozdelime text na kratsie vety pre mobily (napr. podla bodiek a novych riadkov)

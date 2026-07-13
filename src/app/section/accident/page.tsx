@@ -126,7 +126,7 @@ export default function AccidentPage() {
         </ul>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2">
-          <label className="border border-border rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 bg-card hover:bg-muted transition-colors cursor-pointer shadow-sm group">
+          <label className="border border-border rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 bg-card hover:bg-muted transition-colors cursor-pointer shadow-sm group no-tts">
             <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full group-active:scale-95 transition-transform">
               <Camera className="w-6 h-6 text-blue-600 dark:text-blue-400 no-tts" />
             </div>
@@ -141,7 +141,7 @@ export default function AccidentPage() {
             href="https://easf.eu/" 
             target="_blank" 
             rel="noreferrer"
-            className="border border-border rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 bg-card hover:bg-muted transition-colors cursor-pointer shadow-sm group"
+            className="border border-border rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 bg-card hover:bg-muted transition-colors cursor-pointer shadow-sm group no-tts"
           >
             <div className="bg-orange-100 dark:bg-orange-900/30 p-3 rounded-full group-active:scale-95 transition-transform">
               <FileText className="w-6 h-6 text-orange-600 dark:text-orange-400 no-tts" />
@@ -166,7 +166,10 @@ export default function AccidentPage() {
           {t('accident.step5.desc')}
         </p>
 
-        <div className="grid grid-cols-2 gap-3 mb-5">
+        {/* TTS only text pre lehoty */}
+        <span className="sr-only">Lehota na nahlásenie pri nehode na Slovensku je do pätnásť dní, pri nehode v zahraničí je lehota na nahlásenie tridsať dní.</span>
+
+        <div className="grid grid-cols-2 gap-3 mb-5 no-tts">
           <div className="bg-muted p-3 rounded-xl border border-border text-center flex flex-col items-center justify-center">
             <span className="text-2xl font-black text-red-500">15</span>
             <span className="text-xs font-semibold mt-1">{t('accident.deadline.sk')}</span>
@@ -183,7 +186,7 @@ export default function AccidentPage() {
 
         <a 
           href="tel:+421902966689" 
-          className="flex items-center justify-center gap-2 w-full py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg font-bold text-sm shadow transition-colors"
+          className="flex items-center justify-center gap-2 w-full py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg font-bold text-sm shadow transition-colors no-tts"
         >
           <PhoneCall className="w-5 h-5 no-tts" />
           {t('accident.marsh.btn')}

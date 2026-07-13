@@ -53,7 +53,20 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
       el.insertAdjacentText("beforeend", " |PAUSE| ");
     });
 
-    const textToSpeak = clone.textContent || "";
+    let textToSpeak = clone.textContent || "";
+    
+    if (language === 'sk') {
+      textToSpeak = textToSpeak
+        .replace(/BMW/g, 'Bé em vé')
+        .replace(/iDrive/gi, 'aj drajv')
+        .replace(/AdBlue/gi, 'Adblú')
+        .replace(/\b158\b/g, 'sto päťdesiat osem')
+        .replace(/\b112\b/g, 'sto dvanásť')
+        .replace(/\b150\b/g, 'sto päťdesiat')
+        .replace(/MARSH/g, 'Marš')
+        .replace(/Marsh/g, 'Marš');
+    }
+
     // Rozdelíme text podľa našich páuz, odstránime prázdne a získame presné "kúsky" (chunks)
     return textToSpeak.split("|PAUSE|").map(s => s.trim()).filter(s => s.length > 0);
   };
