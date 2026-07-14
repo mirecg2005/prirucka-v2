@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     title: "Príručka",
     statusBarStyle: "black-translucent",
   },
+  icons: {
+    icon: "/prirucka-v2/app-icon.png",
+    apple: "/prirucka-v2/app-icon.png",
+  },
 };
 
 import { TTSProvider } from "@/context/TTSContext";
