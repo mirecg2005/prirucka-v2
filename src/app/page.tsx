@@ -29,8 +29,10 @@ export default function Home() {
   }, []);
 
   const fuse = useMemo(() => new Fuse(allSearchIndex, {
-    keys: ["title", "keywords"],
-    threshold: 0.4,
+    keys: ["title", "keywords", "content"],
+    threshold: 0.3,
+    ignoreLocation: true,
+    minMatchCharLength: 2,
   }), []);
 
   const startListening = () => {
@@ -51,10 +53,16 @@ export default function Home() {
       
       // Auto-read logic:
       const results = fuse.search(transcript);
-      if (results.length > 0 && results[0].item.type === "rule") {
-        setSelectedRule(results[0].item);
-        setAutoPlayRule(true);
-        setQuery(""); // clear query to hide search results
+      if (results.length > 0) {
+        const topResult = results[0].item;
+        if (topResult.type === "rule") {
+          setSelectedRule(topResult);
+          setAutoPlayRule(true);
+          setQuery(""); // clear query to hide search results
+        } else if (topResult.type === "section") {
+          router.push(topResult.route);
+          setQuery("");
+        }
       }
     };
     recognition.onerror = () => setIsListening(false);

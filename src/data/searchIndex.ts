@@ -3,21 +3,24 @@ export const searchIndex = [
     id: "accident",
     title: "Dopravná nehoda / Traffic Accident",
     route: "/section/accident",
-    keywords: "nehoda havária zrážka polícia 158 112 zranenie škoda správa accident crash police injury damage",
+    keywords: "nehoda havária zrážka polícia 158 112 zranenie škoda správa accident crash police injury damage fotoaparát marsh hlásenie",
+    content: "Okamžitý postup pri dopravnej nehode: zabezpečenie miesta, volanie polície a záchranky (112), vyplnenie správy o nehode, fotodokumentácia, nahlásenie poistnej udalosti (Poisťovací maklér Marsh). Postup pri nehode na Slovensku (do 15 dní) aj v zahraničí (do 30 dní).",
     type: "section"
   },
   {
     id: "service",
     title: "Servis a Údržba / Service",
     route: "/section/service",
-    keywords: "servis údržba stk ek olej garancia pneuservis pneumatiky kolesá prezutie zimné letné service maintenance tires oil defekt flat tire kontrolky dashboard tpms tlak porucha breakdown kluče keys adblue",
+    keywords: "servis údržba stk ek olej garancia pneuservis pneumatiky kolesá prezutie zimné letné service maintenance tires oil defekt flat tire kontrolky dashboard tpms tlak porucha breakdown kluče keys adblue ayvens mobility",
+    content: "Pravidelný servis, údržba a objednávanie vozidla do servisu. Riešenie porúch, odťahovej služby, výmeny pneumatík (pneuservis), STK a emisnej kontroly. Vysvetlenie kontroliek na prístrojovej doske (červené, oranžové). Kontakty na asistenčné služby.",
     type: "section"
   },
   {
     id: "fuel",
     title: "Tankovanie / Refueling",
     route: "/section/fuel",
-    keywords: "tankovanie palivo nafta benzín karta shell omv strata kvapalina ostrekovače umývanie fuel gas petrol diesel zahraničie abroad partners",
+    keywords: "tankovanie palivo nafta benzín karta shell omv strata kvapalina ostrekovače umývanie fuel gas petrol diesel zahraničie abroad partners ccs ccska",
+    content: "Pravidlá pre tankovanie firemného vozidla, zoznam partnerských čerpacích staníc. Použitie palivových kariet (Shell, OMV, CCS) na Slovensku a v zahraničí. Nákup prevádzkových kvapalín (zmes do ostrekovačov, AdBlue) a úhrada umývania vozidla.",
     type: "section"
   },
   {
@@ -25,27 +28,31 @@ export const searchIndex = [
     title: "Pravidlá a Pokuty / Rules & Fines",
     route: "/section/rules",
     keywords: "pravidlá doklady vodičák techničák pzp stk rýchlosť obec diaľnica alkohol mobil telefonovanie rules speed alcohol phone pokuty fines zákon law vesta lekárnička výbava equipment zipsovanie cyklisti chodci známka vignette",
+    content: "Zákonné pravidlá cestnej premávky. Rýchlostné limity (obec, mimo obce, diaľnica). Povinná výbava vozidla (lekárnička, reflexná vesta). Pravidlo zipsovania, správanie k cyklistom a chodcom. Prehľad pokút za najčastejšie priestupky (rýchlosť, alkohol, mobil).",
     type: "section"
   },
   {
     id: "insurance",
     title: "Poistné udalosti / Insurance",
     route: "/section/insurance",
-    keywords: "poistka pzp kasko havarijné spoluúčasť škoda vandalizmus živel krádež insurance claim damage theft liability marsh",
+    keywords: "poistka pzp kasko havarijné spoluúčasť škoda vandalizmus živel krádež insurance claim damage theft liability marsh sklo čelné hlásenie",
+    content: "Riešenie poistných udalostí, havarijné poistenie (KASKO) a povinné zmluvné poistenie (PZP). Hlásenie škôd maklérovi (Marsh), výška spoluúčasti, postup pri krádeži, vandalizme, poškodení čelného skla, poškodení živlami (krúpy) a zrážke so zverou.",
     type: "section"
   },
   {
     id: "logbook",
     title: "Kniha jázd / Logbook",
     route: "/section/logbook",
-    keywords: "kniha jázd uzávierka firemné súkromné kilometre mobility logbook mileage private business concur",
+    keywords: "kniha jázd uzávierka firemné súkromné kilometre mobility logbook mileage private business concur vyúčtovanie gps kniha",
+    content: "Ako správne viesť knihu jázd. Rozdiel medzi firemnými a súkromnými kilometrami. Mesačná uzávierka jázd, GPS sledovanie vozidla, vyúčtovanie súkromných ciest a komunikácia s oddelením Mobility a systémom Concur.",
     type: "section"
   },
   {
     id: "contacts",
     title: "Dôležité kontakty / Contacts",
     route: "/section/contacts",
-    keywords: "kontakty číslo marsh ayvens asistencia mobility odťahovka porucha contacts phone assistance breakdown towing kooperativa",
+    keywords: "kontakty číslo marsh ayvens asistencia mobility odťahovka porucha contacts phone assistance breakdown towing kooperativa asistenčná služba hr personálne fleet",
+    content: "Zoznam všetkých dôležitých telefónnych čísel: oddelenie Mobility (Fleet), poisťovací maklér (Marsh), asistenčné služby (Ayvens, Kooperativa), tiesňové linky (112, 158, 150, 155).",
     type: "section"
   }
 ];
