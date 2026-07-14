@@ -54,7 +54,7 @@ export default function Home() {
       // Auto-read logic:
       const results = fuse.search(transcript);
       if (results.length > 0) {
-        const topResult = results[0].item;
+        const topResult: any = results[0].item;
         if (topResult.type === "rule") {
           setSelectedRule(topResult);
           setAutoPlayRule(true);
