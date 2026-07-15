@@ -5,6 +5,7 @@ import SectionLayout from "@/components/layout/SectionLayout";
 import { Wrench, Settings, PhoneCall, ShieldCheck, AlertOctagon, Car, Activity, Droplet, AlertTriangle, Key, Play, Pause, Square, Volume2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTTS } from "@/context/TTSContext";
+import TTSButton from "@/components/tools/TTSButton";
 
 const dict = {
   sk: {
@@ -245,6 +246,7 @@ export default function ServicePage() {
       title={t.title} 
       contentId="content-service"
       headerAccent="yellow"
+      hideGlobalTTS={true}
     >
       <div className="flex items-center gap-3 mb-8 bg-yellow-50 dark:bg-yellow-950/30 p-4 rounded-xl border border-yellow-200 dark:border-yellow-900/50 shadow-sm">
         <Wrench className="w-8 h-8 text-yellow-600 dark:text-yellow-400 no-tts" />
@@ -295,9 +297,12 @@ export default function ServicePage() {
 
           {/* Breakdown specific issues v modernych kartach */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900/50 text-rose-600 dark:text-rose-400 rounded-2xl flex items-center justify-center mb-5 shadow-inner">
-                <Settings className="w-6 h-6 no-tts" />
+            <div id="tts-flat" className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <div className="flex justify-between items-start mb-5">
+                <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900/50 text-rose-600 dark:text-rose-400 rounded-2xl flex items-center justify-center shadow-inner">
+                  <Settings className="w-6 h-6 no-tts" />
+                </div>
+                <div className="scale-75 origin-top-right no-tts"><TTSButton contentId="tts-flat" /></div>
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_flat}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">
@@ -307,9 +312,12 @@ export default function ServicePage() {
               </ul>
             </div>
             
-            <div className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center mb-5 shadow-inner">
-                <Car className="w-6 h-6 no-tts" />
+            <div id="tts-keys" className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <div className="flex justify-between items-start mb-5">
+                <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center shadow-inner">
+                  <Car className="w-6 h-6 no-tts" />
+                </div>
+                <div className="scale-75 origin-top-right no-tts"><TTSButton contentId="tts-keys" /></div>
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_keys}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">
@@ -319,9 +327,12 @@ export default function ServicePage() {
               </ul>
             </div>
             
-            <div className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-2xl flex items-center justify-center mb-5 shadow-inner">
-                <Key className="w-6 h-6 no-tts" />
+            <div id="tts-lost" className="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden backdrop-blur-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <div className="flex justify-between items-start mb-5">
+                <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-2xl flex items-center justify-center shadow-inner">
+                  <Key className="w-6 h-6 no-tts" />
+                </div>
+                <div className="scale-75 origin-top-right no-tts"><TTSButton contentId="tts-lost" /></div>
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_lost}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">

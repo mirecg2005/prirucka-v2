@@ -10,6 +10,7 @@ interface SectionLayoutProps {
   children: React.ReactNode;
   contentId: string;
   headerAccent?: "blue" | "red" | "yellow" | "gray" | "cyan" | "green" | "purple" | "orange" | "indigo";
+  hideGlobalTTS?: boolean;
 }
 
 const headerGradients = {
@@ -28,7 +29,8 @@ export default function SectionLayout({
   title, 
   children, 
   contentId, 
-  headerAccent = "gray" 
+  headerAccent = "gray",
+  hideGlobalTTS = false
 }: SectionLayoutProps) {
   const router = useRouter();
 
@@ -49,7 +51,7 @@ export default function SectionLayout({
             {title}
           </h1>
 
-          <TTSButton contentId={contentId} />
+          {!hideGlobalTTS && <TTSButton contentId={contentId} />}
         </div>
       </div>
 
