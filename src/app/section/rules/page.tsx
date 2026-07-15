@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import SectionLayout from "@/components/layout/SectionLayout";
 import { BookOpen, AlertTriangle, FileCheck2, ExternalLink, ShieldCheck, Scale, Car, Activity, Zap, Calculator } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import TTSButton from "@/components/tools/TTSButton";
 
 const dict = {
   sk: {
@@ -145,6 +146,7 @@ export default function RulesPage() {
       title={t.title} 
       contentId="content-rules"
       headerAccent="purple"
+      hideGlobalTTS={true}
     >
       <div className="flex items-center gap-3 mb-8 bg-purple-50 dark:bg-purple-950/30 p-4 rounded-xl border border-purple-200 dark:border-purple-900/50 shadow-sm">
         <Scale className="w-8 h-8 text-purple-600 dark:text-purple-400 no-tts" />
@@ -156,10 +158,13 @@ export default function RulesPage() {
       <div className="space-y-10">
         
         {/* ZAKLADNE PRAVIDLA */}
-        <section>
-          <h2 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-4 uppercase tracking-wider text-sm flex items-center gap-2">
-            <BookOpen className="w-5 h-5 no-tts" /> {t.basic_h2}
-          </h2>
+        <section id="tts-basic-rules">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wider text-sm flex items-center gap-2">
+              <BookOpen className="w-5 h-5 no-tts" /> {t.basic_h2}
+            </h2>
+            <div className="scale-75 origin-right no-tts"><TTSButton contentId="tts-basic-rules" /></div>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
               <span className="text-3xl mb-2 no-tts block">🚭</span>
@@ -288,13 +293,16 @@ export default function RulesPage() {
 
         {/* POKUTY & KALKULACKA */}
         <section>
-          <h2 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-4 uppercase tracking-wider text-sm flex items-center gap-2">
-            <FileCheck2 className="w-5 h-5 no-tts" /> {t.fines_h2}
-          </h2>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wider text-sm flex items-center gap-2">
+              <FileCheck2 className="w-5 h-5 no-tts" /> {t.fines_h2}
+            </h2>
+            <div className="scale-75 origin-right no-tts"><TTSButton contentId="tts-fines-content" /></div>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <div id="tts-fines-content" className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <ol className="relative border-l-2 border-blue-200 dark:border-blue-800 space-y-6 ml-3 mb-6">
                 <li className="ml-6">
                   <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[13px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">1</span>
