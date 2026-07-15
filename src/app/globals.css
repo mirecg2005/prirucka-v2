@@ -83,3 +83,22 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-foreground);
 }
+
+/* TTS Karaoke Highlight */
+.tts-highlight {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+  border-left: 3px solid #3B82F6 !important;
+  padding-left: 8px !important;
+  border-radius: 6px !important;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
+  animation: tts-pulse 2s ease-in-out infinite;
+}
+
+.dark .tts-highlight {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
+
+@keyframes tts-pulse {
+  0%, 100% { background-color: rgba(59, 130, 246, 0.12); }
+  50% { background-color: rgba(59, 130, 246, 0.22); }
+}

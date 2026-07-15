@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { applyPhoneticRules } from "@/utils/phoneticDictionary";
 
 type TTSState = "idle" | "playing" | "paused";
 
@@ -46,12 +47,23 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
     const voices = voicesRef.current;
     if (!voices.length) return null;
     if (lang === 'sk') {
+      // Prioritizácia Premium/Enhanced hlasov
+      const premiumSk = voices.find(v => 
+        (v.lang === 'sk-SK' || v.lang === 'sk_SK') && 
+        (v.name.toLowerCase().includes('enhanced') || v.name.toLowerCase().includes('premium') || v.name.toLowerCase().includes('natural'))
+      );
+      if (premiumSk) return premiumSk;
       const skVoice = voices.find(v => v.lang === 'sk-SK' || v.lang === 'sk_SK');
       if (skVoice) return skVoice;
       const czVoice = voices.find(v => v.lang === 'cs-CZ' || v.lang === 'cs_CZ');
       if (czVoice) return czVoice;
     } else {
-      const enGB = voices.find(v => v.lang === 'en-GB' && v.name.includes('Google'));
+      const premiumEn = voices.find(v => 
+        v.lang.startsWith('en') && 
+        (v.name.toLowerCase().includes('enhanced') || v.name.toLowerCase().includes('premium') || v.name.toLowerCase().includes('natural') || v.name.toLowerCase().includes('google'))
+      );
+      if (premiumEn) return premiumEn;
+      const enGB = voices.find(v => v.lang === 'en-GB');
       if (enGB) return enGB;
       const enUS = voices.find(v => v.lang === 'en-US');
       if (enUS) return enUS;
@@ -105,20 +117,8 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
 
     window.speechSynthesis.cancel();
     
-    let processedText = text;
     const targetLang = forceLanguage || language;
-    
-    if (targetLang === 'sk') {
-      processedText = processedText
-        .replace(/BMW/g, 'Bé em vé')
-        .replace(/iDrive/gi, 'aj drajv')
-        .replace(/AdBlue/gi, 'Adblú')
-        .replace(/\b158\b/g, 'sto päťdesiat osem')
-        .replace(/\b112\b/g, 'sto dvanásť')
-        .replace(/\b150\b/g, 'sto päťdesiat')
-        .replace(/MARSH/g, 'Marš')
-        .replace(/Marsh/g, 'Marš');
-    }
+    let processedText = applyPhoneticRules(text, targetLang);
 
     // Rozdelime text na kratsie vety pre mobily (napr. podla bodiek a novych riadkov)
     // pridali sme | ako separator, mozeme ho vyuzit aj na "..."
