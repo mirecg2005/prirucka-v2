@@ -17,6 +17,7 @@ const dict = {
     rule3_h: "Zamykanie", rule3_p: "Pri každom opustení vozidla je užívateľ povinný ho riadne uzamknúť a vziať si kľúč.",
     rule4_h: "Čistota", rule4_p: "Udržujte čistotu. Čistenie interiéru na náklady spol. Lidl je zakázané.",
     rule5_h: "Poistenie", rule5_p: "Vozidlo je poistené. Poistenie sa nevzťahuje na súkromné veci vo vozidle.",
+    rule6_h: "Parkovacia politika", rule6_p: "Pre parkovaciu politiku v Bratislave (PAAS) stačí predložiť Dohodu o používaní služobného vozidla a Splnomocnenie o používaní vozidla na súkromné účely. Mimo Bratislavy je postup individuálny.",
     
     // Zakonne pravidla
     legal_h2: "Zákonné Povinnosti (SR)",
@@ -61,6 +62,7 @@ const dict = {
     rule3_h: "Locking", rule3_p: "Always lock the vehicle and take the key.",
     rule4_h: "Cleanliness", rule4_p: "Keep it clean. Interior cleaning at Lidl's expense is prohibited.",
     rule5_h: "Insurance", rule5_p: "Vehicle is insured. Private belongings are not covered.",
+    rule6_h: "Parking Policy", rule6_p: "For Bratislava parking (PAAS), provide the Vehicle Use Agreement and Power of Attorney. Outside Bratislava, the process varies.",
     
     legal_h2: "Legal Duties (SK)",
     pdf_link: "Road Traffic Act (PDF)",
@@ -179,10 +181,15 @@ export default function RulesPage() {
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule4_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule4_p}</p>
             </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center md:col-span-2 group transition-all">
+            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
               <span className="text-3xl mb-2 no-tts block">🛡️</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule5_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule5_p}</p>
+            </div>
+            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+              <span className="text-3xl mb-2 no-tts block">🅿️</span>
+              <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule6_h}</h4>
+              <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule6_p}</p>
             </div>
           </div>
         </section>
