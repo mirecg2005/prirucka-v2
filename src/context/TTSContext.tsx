@@ -90,7 +90,7 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
     utterance.lang = targetLang === 'sk' ? 'sk-SK' : 'en-US';
     const bestVoice = getBestVoice(targetLang);
     if (bestVoice) utterance.voice = bestVoice;
-    utterance.rate = 0.8;
+    utterance.rate = 1.0;
     
     utterance.onend = () => {
       currentIndexRef.current++;

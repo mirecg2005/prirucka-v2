@@ -16,7 +16,7 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
   const [isPaused, setIsPaused] = useState(false);
   const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
   const [totalChunks, setTotalChunks] = useState(0);
-  const [speedIndex, setSpeedIndex] = useState(1); // default 0.8x
+  const [speedIndex, setSpeedIndex] = useState(2); // default 1.0x
   const { language } = useLanguage();
   
   const synthRef = useRef<SpeechSynthesis | null>(null);
@@ -24,7 +24,7 @@ export default function TTSButton({ contentId }: TTSButtonProps) {
   const currentIndexRef = useRef(0);
   const isSpeakingRef = useRef(false);
   const isPausedRef = useRef(false);
-  const speedRef = useRef(SPEED_OPTIONS[1]);
+  const speedRef = useRef(SPEED_OPTIONS[2]);
   const highlightedRef = useRef<HTMLElement | null>(null);
 
   // Odstránenie highlight z aktuálneho elementu

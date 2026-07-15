@@ -88,7 +88,7 @@ const skPhoneticRules: PhoneticRule[] = [
   { pattern: /Marsh/g, replacement: 'Marš' },
   { pattern: /Ayvens/gi, replacement: 'Ajvens' },
   { pattern: /Concur/gi, replacement: 'Konkur' },
-  { pattern: /pneuservis/gi, replacement: 'pnéservis' },
+  { pattern: /pneuservis/gi, replacement: 'pneu servis' },
   
   // Skratky
   { pattern: /\bSTK\b/g, replacement: 'Es Té Ká' },
