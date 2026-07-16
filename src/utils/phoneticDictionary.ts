@@ -108,7 +108,11 @@ const skPhoneticRules: PhoneticRule[] = [
   
   // Meny a jednotky
   { pattern: /€/g, replacement: 'eur' },
-  { pattern: /\bkm\/h\b/g, replacement: 'kilometrov za hodinu' },
+  { pattern: /\b50\s*km\/h\b/g, replacement: '50 kilometrov za hodinu' },
+  { pattern: /\b80\s*km\/h\b/g, replacement: '80 kilometrov za hodinu' },
+  { pattern: /km\/h/g, replacement: ' kilometrov za hodinu' },
+  { pattern: /\b1\.5\s*m\b/g, replacement: 'jeden a pol metra' },
+  { pattern: /\b1\s*m\b/g, replacement: 'jeden meter' },
   { pattern: /\btel\.\s*č\./gi, replacement: 'telefónne číslo' },
 ];
 
