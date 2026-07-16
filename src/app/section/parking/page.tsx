@@ -30,6 +30,8 @@ export default function ParkingPage() {
       lbl_saved: "Uložená poloha:",
       err_geo: "Nepodarilo sa získať polohu. Skontrolujte povolenia.",
       loading: "Získavam polohu...",
+      placeholder: "Sektor D, miesto 145...",
+      lbl_note_short: "Poznámka:",
     },
     en: {
       title: "Where did I park?",
@@ -41,6 +43,8 @@ export default function ParkingPage() {
       lbl_saved: "Saved location:",
       err_geo: "Failed to get location. Check permissions.",
       loading: "Getting location...",
+      placeholder: "Sector D, spot 145...",
+      lbl_note_short: "Note:",
     }
   }[language] || {
     title: "Kde som zaparkoval?",
@@ -52,6 +56,8 @@ export default function ParkingPage() {
     lbl_saved: "Uložená poloha:",
     err_geo: "Nepodarilo sa získať polohu. Skontrolujte povolenia.",
     loading: "Získavam polohu...",
+    placeholder: "Sektor D, miesto 145...",
+    lbl_note_short: "Poznámka:",
   };
 
   useEffect(() => {
@@ -129,7 +135,7 @@ export default function ParkingPage() {
               value={noteInput}
               onChange={(e) => setNoteInput(e.target.value)}
               className="w-full bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
-              placeholder="Sektor D, miesto 145..."
+              placeholder={t.placeholder}
             />
           </label>
 
@@ -163,7 +169,7 @@ export default function ParkingPage() {
             
             {location.note && (
               <div className="mt-6 mb-2">
-                <p className="text-xs text-purple-200 uppercase tracking-wider font-bold mb-1">Poznámka:</p>
+                <p className="text-xs text-purple-200 uppercase tracking-wider font-bold mb-1">{t.lbl_note_short}</p>
                 <p className="text-xl font-black drop-shadow-sm">{location.note}</p>
               </div>
             )}

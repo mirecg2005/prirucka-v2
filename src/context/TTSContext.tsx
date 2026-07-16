@@ -13,6 +13,8 @@ interface TTSContextType {
   pause: () => void;
   resume: () => void;
   currentText: string;
+  interactiveMode: boolean;
+  toggleInteractiveMode: () => void;
 }
 
 const TTSContext = createContext<TTSContextType | undefined>(undefined);
@@ -20,6 +22,7 @@ const TTSContext = createContext<TTSContextType | undefined>(undefined);
 export function TTSProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<TTSState>("idle");
   const [currentText, setCurrentText] = useState("");
+  const [interactiveMode, setInteractiveMode] = useState(false);
   const { language } = useLanguage();
   
   const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
@@ -170,8 +173,18 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
     }
   }, [playNextChunk]);
 
+  const toggleInteractiveMode = useCallback(() => {
+    setInteractiveMode(prev => {
+      if (prev) {
+        // Turning off interactive mode stops any playing speech
+        stop();
+      }
+      return !prev;
+    });
+  }, [stop]);
+
   return (
-    <TTSContext.Provider value={{ state, play, stop, pause, resume, currentText }}>
+    <TTSContext.Provider value={{ state, play, stop, pause, resume, currentText, interactiveMode, toggleInteractiveMode }}>
       {children}
     </TTSContext.Provider>
   );

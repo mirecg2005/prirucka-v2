@@ -5,6 +5,7 @@ import SectionLayout from "@/components/layout/SectionLayout";
 import { BookOpen, AlertTriangle, FileCheck2, ExternalLink, ShieldCheck, Scale, Car, Activity, Zap, Calculator } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import TTSButton from "@/components/tools/TTSButton";
+import InteractiveTTSWrapper from "@/components/tools/InteractiveTTSWrapper";
 
 const dict = {
   sk: {
@@ -82,20 +83,20 @@ const dict = {
     equip_1: "First aid kit", equip_2: "Warning triangle", equip_3: "Reflective vest", equip_4: "Spare wheel/kit",
 
     acc_lanes_h: "Driving in Lanes", acc_zip_h: "Zipper merging", acc_zip_p: "Alternate merging where lanes converge.", acc_rescue_h: "Rescue lane", acc_rescue_p: "Left lane moves left, others right. Center clear.",
-    acc_vulnerable_h: "Vulnerable Users", acc_cyc_h: "Cyclists", acc_cyc_p: "Distance: >50km/h min 1.5m, otherwise 1m.", acc_ped_h: "Pedestrians", acc_ped_p: "Right of way on crosswalks (except trams).",
+    acc_vulnerable_h: "Vulnerable Users", acc_cyc_h: "Cyclists", acc_cyc_p: "Distance: over 50km/h min 1.5m, otherwise 1m.", acc_ped_h: "Pedestrians", acc_ped_p: "Right of way on pedestrian crossings (except trams).",
     
-    acc_hwy_h: "Highways & Winter", acc_hwy_title: "Highways", acc_hwy_p: "Mandatory e-vignette, min 80 km/h.", check_vignette: "Check eznamka.sk",
+    acc_hwy_h: "Highways & Winter", acc_hwy_title: "Highways", acc_hwy_p: "Mandatory e-vignette, min. 80 km/h.", check_vignette: "Check eznamka.sk",
     acc_win_title: "Winter Operation", acc_win_p: "Winter tires mandatory if snow/ice. Clean windows/plates.",
 
     fines_h2: "Fine Resolution",
     fines_s1_h: "Delivery", fines_s1_p: "Fine delivered to Lidl as the vehicle owner.",
-    fines_s2_h: "Identification", fines_s2_p: "Mobility Dept identifies driver and sends request.",
-    fines_s3_h: "Payment", fines_s3_p: "Employee must pay immediately and send proof.",
+    fines_s2_h: "Identification", fines_s2_p: "Mobility Dept identifies driver and sends a payment request.",
+    fines_s3_h: "Payment", fines_s3_p: "Employee must pay the fine immediately (pokuty@lidl.sk).",
     fines_warn_h: "Important Warning", fines_warn_p: "Failure to pay will result in salary deduction.",
 
     calc_h: "Fine Calculator", calc_desc: "Estimated speeding block fine (SK).",
-    calc_in: "In city (limit 50)", calc_out: "Outside", calc_over: "Exceeded by:", calc_res_lbl: "Estimated Fine",
-    calc_note: "* Calculated according to on-the-spot block fine tariff."
+    calc_in: "Urban area (limit 50)", calc_out: "Outside urban area", calc_over: "Exceeded by:", calc_res_lbl: "Estimated Fine",
+    calc_note: "* Estimated based on the tariff for on-the-spot block fines."
   }
 };
 
@@ -166,36 +167,36 @@ export default function RulesPage() {
             <div className="scale-75 origin-right no-tts"><TTSButton contentId="tts-basic-rules" /></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">🚭</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule1_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule1_p}</p>
-            </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            </InteractiveTTSWrapper>
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">📄</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule2_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule2_p}</p>
-            </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            </InteractiveTTSWrapper>
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">🔑</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule3_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule3_p}</p>
-            </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            </InteractiveTTSWrapper>
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">🧼</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule4_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule4_p}</p>
-            </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            </InteractiveTTSWrapper>
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">🛡️</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule5_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule5_p}</p>
-            </div>
-            <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center group transition-all">
+            </InteractiveTTSWrapper>
+            <InteractiveTTSWrapper className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-800/50 flex flex-col items-center text-center">
               <span className="text-3xl mb-2 no-tts block">🅿️</span>
               <h4 className="font-bold text-xs uppercase text-slate-800 dark:text-white mb-1">{t.rule6_h}</h4>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">{t.rule6_p}</p>
-            </div>
+            </InteractiveTTSWrapper>
           </div>
         </section>
 
@@ -261,7 +262,7 @@ export default function RulesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <h3 className="font-bold text-sm mb-3 flex items-center text-slate-800 dark:text-white">
                 <ShieldCheck className="w-4 h-4 mr-2 text-emerald-500 no-tts" /> {t.docs_h}
               </h3>
@@ -275,9 +276,9 @@ export default function RulesPage() {
               <div className="mt-3 bg-slate-50 dark:bg-slate-700/50 p-2 rounded-lg text-[10px] text-slate-500 dark:text-slate-400 border border-slate-100 dark:border-slate-600">
                 <strong>{t.lights_h}</strong> {t.lights_p}
               </div>
-            </div>
+            </InteractiveTTSWrapper>
 
-            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <h3 className="font-bold text-sm mb-3 flex items-center text-slate-800 dark:text-white">
                 <Activity className="w-4 h-4 mr-2 text-amber-500 no-tts" /> {t.equip_h}
               </h3>
@@ -287,11 +288,11 @@ export default function RulesPage() {
                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>{t.equip_3}</li>
                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>{t.equip_4}</li>
               </ul>
-            </div>
+            </InteractiveTTSWrapper>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-indigo-500 no-tts" /> {t.acc_lanes_h}</h3>
               <div className="space-y-3">
                 <div>
@@ -303,9 +304,9 @@ export default function RulesPage() {
                   <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_rescue_p}</p>
                 </div>
               </div>
-            </div>
+            </InteractiveTTSWrapper>
 
-            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-emerald-500 no-tts" /> {t.acc_vulnerable_h}</h3>
               <div className="space-y-3">
                 <div>
@@ -317,9 +318,9 @@ export default function RulesPage() {
                   <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_ped_p}</p>
                 </div>
               </div>
-            </div>
+            </InteractiveTTSWrapper>
 
-            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 md:col-span-2">
+            <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 md:col-span-2">
               <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-amber-500 no-tts" /> {t.acc_hwy_h}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -334,7 +335,7 @@ export default function RulesPage() {
                   <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_win_p}</p>
                 </div>
               </div>
-            </div>
+            </InteractiveTTSWrapper>
           </div>
         </section>
 
@@ -351,18 +352,18 @@ export default function RulesPage() {
             
             <div id="tts-fines-content" className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <ol className="relative border-l-2 border-blue-200 dark:border-blue-800 space-y-6 ml-3 mb-6">
-                <li className="ml-6">
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[13px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">1</span>
+                <li className="ml-6 relative">
+                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[37px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">1</span>
                   <h4 className="font-bold text-sm text-slate-800 dark:text-white">{t.fines_s1_h}</h4>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t.fines_s1_p}</p>
                 </li>
-                <li className="ml-6">
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[13px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">2</span>
+                <li className="ml-6 relative">
+                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[37px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">2</span>
                   <h4 className="font-bold text-sm text-slate-800 dark:text-white">{t.fines_s2_h}</h4>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t.fines_s2_p}</p>
                 </li>
-                <li className="ml-6">
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[13px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">3</span>
+                <li className="ml-6 relative">
+                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 text-white rounded-full -left-[37px] font-bold text-[10px] ring-4 ring-slate-50 dark:ring-slate-900">3</span>
                   <h4 className="font-bold text-sm text-slate-800 dark:text-white">{t.fines_s3_h}</h4>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t.fines_s3_p}</p>
                 </li>
