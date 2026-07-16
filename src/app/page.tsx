@@ -182,7 +182,7 @@ export default function Home() {
              <SectionCard title={language === 'sk' ? 'Kniha Jázd' : 'Logbook'} icon={FileText} accentColor="purple" onClick={() => router.push('/section/logbook')} />
              <SectionCard title={language === 'sk' ? 'Nové Vozidlo' : 'New Vehicle'} icon={Car} accentColor="orange" onClick={() => router.push('/section/new-vehicle')} />
              <SectionCard title="MY BMW" icon={Smartphone} accentColor="blue" onClick={() => router.push('/section/my-bmw')} />
-             <SectionCard title={language === 'sk' ? 'Parkovanie' : 'Parking'} icon={MapPin} accentColor="purple" onClick={() => router.push('/section/parking')} />
+             <SectionCard title={language === 'sk' ? 'Miesto zaparkovania' : 'Parking'} icon={MapPin} accentColor="purple" onClick={() => router.push('/section/parking')} />
              
              <SectionCard title={language === 'sk' ? 'Dôležité Kontakty' : 'Important Contacts'} icon={PhoneCall} accentColor="red" onClick={() => router.push('/section/contacts')} />
           </div>
