@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-type FontSize = "normal" | "large" | "xl";
+type FontSize = "normal" | "large" | "xl" | "xxl";
 
 interface FontSizeContextType {
   fontSize: FontSize;
@@ -17,7 +17,7 @@ export function FontSizeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("app-font-size") as FontSize;
-    if (saved && ["normal", "large", "xl"].includes(saved)) {
+    if (saved && ["normal", "large", "xl", "xxl"].includes(saved)) {
       setFontSizeState(saved);
       document.documentElement.setAttribute("data-font-size", saved);
     } else {
@@ -34,6 +34,7 @@ export function FontSizeProvider({ children }: { children: React.ReactNode }) {
   const cycleFontSize = () => {
     if (fontSize === "normal") setFontSize("large");
     else if (fontSize === "large") setFontSize("xl");
+    else if (fontSize === "xl") setFontSize("xxl");
     else setFontSize("normal");
   };
 

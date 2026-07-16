@@ -40,10 +40,18 @@ export const searchIndex = [
     type: "section"
   },
   {
+    id: "parking",
+    title: "Parkovanie / Parking",
+    route: "/section/parking",
+    keywords: "parkovanie poloha gps kde je auto parking location map",
+    content: "Uloženie polohy zaparkovaného vozidla a informácie o parkovaní.",
+    type: "section"
+  },
+  {
     id: "logbook",
     title: "Kniha jázd / Logbook",
     route: "/section/logbook",
-    keywords: "kniha jázd uzávierka firemné súkromné kilometre mobility logbook mileage private business concur vyúčtovanie gps kniha",
+    keywords: "kniha jázd uzávierka firemné súkromné kilometre kilometre mobility logbook mileage private business concur vyúčtovanie gps kniha",
     content: "Ako správne viesť knihu jázd. Rozdiel medzi firemnými a súkromnými kilometrami. Mesačná uzávierka jázd, GPS sledovanie vozidla, vyúčtovanie súkromných ciest a komunikácia s oddelením Mobility a systémom Concur.",
     type: "section"
   },

@@ -289,6 +289,53 @@ export default function RulesPage() {
               </ul>
             </div>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+              <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-indigo-500 no-tts" /> {t.acc_lanes_h}</h3>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="text-xs font-bold text-indigo-600 dark:text-indigo-400">{t.acc_zip_h}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_zip_p}</p>
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-indigo-600 dark:text-indigo-400">{t.acc_rescue_h}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_rescue_p}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+              <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-emerald-500 no-tts" /> {t.acc_vulnerable_h}</h3>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{t.acc_cyc_h}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_cyc_p}</p>
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{t.acc_ped_h}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_ped_p}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 md:col-span-2">
+              <h3 className="font-bold text-sm mb-3 text-slate-800 dark:text-white flex items-center"><Activity className="w-4 h-4 mr-2 text-amber-500 no-tts" /> {t.acc_hwy_h}</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <h4 className="text-xs font-bold text-amber-600 dark:text-amber-400">{t.acc_hwy_title}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300 mb-2">{t.acc_hwy_p}</p>
+                  <a href="https://eznamka.sk" target="_blank" rel="noreferrer" className="inline-block text-[10px] bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-1 rounded font-bold transition-colors no-tts">
+                    <ExternalLink className="w-3 h-3 inline mr-1" />{t.check_vignette}
+                  </a>
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-amber-600 dark:text-amber-400">{t.acc_win_title}</h4>
+                  <p className="text-[10px] text-slate-600 dark:text-slate-300">{t.acc_win_p}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* POKUTY & KALKULACKA */}

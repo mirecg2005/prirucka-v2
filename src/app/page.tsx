@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Search, Wrench, Droplet, FileText, PhoneCall, ShieldAlert, ShieldCheck, ChevronRight, BookOpen, Mic, AlertCircle, Scale, Globe, Receipt, Car, Smartphone } from "lucide-react";
+import { Search, Wrench, Droplet, FileText, PhoneCall, ShieldAlert, ShieldCheck, ChevronRight, BookOpen, Mic, AlertCircle, Scale, Globe, Receipt, Car, Smartphone, MapPin } from "lucide-react";
 import SectionCard from "@/components/dashboard/SectionCard";
 import QuickActionCard from "@/components/dashboard/QuickActionCard";
 import EmergencyBanner from "@/components/dashboard/EmergencyBanner";
@@ -175,13 +175,14 @@ export default function Home() {
         <div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
              <SectionCard title={language === 'sk' ? 'Základné Pravidlá' : 'Basic Rules'} icon={BookOpen} accentColor="blue" onClick={() => router.push('/section/rules')} />
-             <SectionCard title={language === 'sk' ? 'Zákonné Pravidlá a Pokuty' : 'Legal Rules & Fines'} icon={Scale} accentColor="yellow" onClick={() => router.push('/section/rules')} />
+             <SectionCard title={language === 'sk' ? 'Zákonné Pravidlá a Pokuty' : 'Legal Rules & Fines'} icon={Scale} accentColor="yellow" onClick={() => router.push('/section/rules#legal')} />
              <SectionCard title={language === 'sk' ? 'Tankovanie (aj Zahraničie)' : 'Fueling (& Abroad)'} icon={Droplet} accentColor="green" onClick={() => router.push('/section/fuel')} />
              
              <SectionCard title={language === 'sk' ? 'Poistné Udalosti' : 'Insurance Claims'} icon={ShieldCheck} accentColor="green" onClick={() => router.push('/section/insurance')} />
              <SectionCard title={language === 'sk' ? 'Kniha Jázd' : 'Logbook'} icon={FileText} accentColor="purple" onClick={() => router.push('/section/logbook')} />
              <SectionCard title={language === 'sk' ? 'Nové Vozidlo' : 'New Vehicle'} icon={Car} accentColor="orange" onClick={() => router.push('/section/new-vehicle')} />
              <SectionCard title="MY BMW" icon={Smartphone} accentColor="blue" onClick={() => router.push('/section/my-bmw')} />
+             <SectionCard title={language === 'sk' ? 'Parkovanie' : 'Parking'} icon={MapPin} accentColor="purple" onClick={() => router.push('/section/parking')} />
              
              <SectionCard title={language === 'sk' ? 'Dôležité Kontakty' : 'Important Contacts'} icon={PhoneCall} accentColor="red" onClick={() => router.push('/section/contacts')} />
           </div>

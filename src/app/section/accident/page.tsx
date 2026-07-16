@@ -22,7 +22,7 @@ export default function AccidentPage() {
       <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-6 shadow-xl relative overflow-hidden group">
         <div className="absolute top-0 left-0 w-1.5 h-full bg-red-500"></div>
         <h2 className="font-bold text-lg text-foreground flex items-center gap-2 mb-3">
-          <span className="sr-only">Po prvé... </span>
+          <span className="sr-only">{t('accident.step.1')}</span>
           <span className="no-tts bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">1</span>
           {t('accident.step1.title')}
         </h2>
@@ -50,7 +50,7 @@ export default function AccidentPage() {
       <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-6 shadow-xl relative overflow-hidden mt-4 group">
         <div className="absolute top-0 left-0 w-1.5 h-full bg-amber-500"></div>
         <h2 className="font-bold text-lg text-foreground flex items-center gap-2 mb-3">
-          <span className="sr-only">Po druhé... </span>
+          <span className="sr-only">{t('accident.step.2')}</span>
           <span className="no-tts bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">2</span>
           {t('accident.step2.title')}
         </h2>
@@ -70,7 +70,7 @@ export default function AccidentPage() {
       <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-6 shadow-xl relative overflow-hidden mt-4 group">
         <div className="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
         <h2 className="font-bold text-lg text-foreground flex items-center gap-2 mb-3">
-          <span className="sr-only">Po tretie... </span>
+          <span className="sr-only">{t('accident.step.3')}</span>
           <span className="no-tts bg-primary/10 text-primary w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">3</span>
           {t('accident.step3.title')}
         </h2>
@@ -98,7 +98,7 @@ export default function AccidentPage() {
       <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-6 shadow-xl relative overflow-hidden mt-4 group">
         <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
         <h2 className="font-bold text-lg text-foreground flex items-center gap-2 mb-3">
-          <span className="sr-only">Po štvrté... </span>
+          <span className="sr-only">{t('accident.step.4')}</span>
           <span className="no-tts bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">4</span>
           {t('accident.step4.title')}
         </h2>
@@ -158,7 +158,7 @@ export default function AccidentPage() {
       <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-6 shadow-xl relative overflow-hidden mt-4">
         <div className="absolute top-0 left-0 w-1.5 h-full bg-purple-500"></div>
         <h2 className="font-bold text-lg text-foreground flex items-center gap-2 mb-3">
-          <span className="sr-only">Po piate... </span>
+          <span className="sr-only">{t('accident.step.5')}</span>
           <span className="no-tts bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">5</span>
           {t('accident.step5.title')}
         </h2>
@@ -167,7 +167,7 @@ export default function AccidentPage() {
         </p>
 
         {/* TTS only text pre lehoty */}
-        <span className="sr-only">Lehota na nahlásenie pri nehode na Slovensku je do pätnásť dní, pri nehode v zahraničí je lehota na nahlásenie tridsať dní.</span>
+        <span className="sr-only">{t('accident.deadline.tts')}</span>
 
         <div className="grid grid-cols-2 gap-3 mb-5 no-tts">
           <div className="bg-muted p-3 rounded-xl border border-border text-center flex flex-col items-center justify-center">

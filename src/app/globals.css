@@ -14,6 +14,10 @@ html[data-font-size="xl"] {
   font-size: 19px; /* ~18% larger */
 }
 
+html[data-font-size="xxl"] {
+  font-size: 21px; /* ~31% larger */
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {

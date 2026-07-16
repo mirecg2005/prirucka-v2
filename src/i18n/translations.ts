@@ -29,6 +29,11 @@ export const translations = {
     // Accident Page
     'accident.title': 'DOPRAVNÁ NEHODA',
     'accident.intro': 'Zachovajte pokoj. Nasledujte tieto kroky:',
+    'accident.step.1': 'Po prvé... ',
+    'accident.step.2': 'Po druhé... ',
+    'accident.step.3': 'Po tretie... ',
+    'accident.step.4': 'Po štvrté... ',
+    'accident.step.5': 'Po piate... ',
     'accident.step1.title': 'Okamžitá bezpečnosť',
     'accident.step1.bullet1': 'Zastavte vozidlo a vypnite motor.',
     'accident.step1.bullet2': 'Zapnite výstražné svetlá.',
@@ -60,6 +65,7 @@ export const translations = {
     'accident.deadline.sk': 'Nehoda na Slovensku',
     'accident.deadline.abroad': 'Nehoda v zahraničí',
     'accident.deadline.warning': 'Nemeškajte. Po uplynutí týchto lehôt môže poisťovňa krátiť poistné plnenie.',
+    'accident.deadline.tts': 'Lehota na nahlásenie pri nehode na Slovensku je do pätnásť dní, pri nehode v zahraničí je lehota na nahlásenie tridsať dní.',
     'accident.marsh.btn': 'Volať makléra MARSH',
 
     // Contacts
@@ -164,6 +170,11 @@ export const translations = {
     // Accident Page
     'accident.title': 'TRAFFIC ACCIDENT',
     'accident.intro': 'Stay calm. Follow these steps:',
+    'accident.step.1': 'First... ',
+    'accident.step.2': 'Second... ',
+    'accident.step.3': 'Third... ',
+    'accident.step.4': 'Fourth... ',
+    'accident.step.5': 'Fifth... ',
     'accident.step1.title': 'Immediate Safety',
     'accident.step1.bullet1': 'Stop the vehicle and turn off the engine.',
     'accident.step1.bullet2': 'Turn on the hazard lights.',
@@ -195,6 +206,7 @@ export const translations = {
     'accident.deadline.sk': 'Accident in Slovakia',
     'accident.deadline.abroad': 'Accident Abroad',
     'accident.deadline.warning': 'Do not delay. After these deadlines, the insurance company may reduce the payout.',
+    'accident.deadline.tts': 'The deadline for reporting an accident in Slovakia is up to fifteen days, and for an accident abroad, it is thirty days.',
     'accident.marsh.btn': 'Call MARSH broker',
 
     // Contacts
