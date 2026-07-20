@@ -30,9 +30,11 @@ export default function Home() {
 
   const fuse = useMemo(() => new Fuse(allSearchIndex, {
     keys: ["title", "keywords", "content"],
-    threshold: 0.3,
+    threshold: 0.5,
     ignoreLocation: true,
     minMatchCharLength: 2,
+    ignoreFieldNorm: true,
+    findAllMatches: true,
   }), []);
 
   const startListening = () => {
@@ -51,8 +53,11 @@ export default function Home() {
       const transcript = event.results[0][0].transcript;
       setQuery(transcript);
       
-      // Auto-read logic:
-      const results = fuse.search(transcript);
+      // Odstránime bežné slová pre lepšie vyhľadávanie
+      const cleanQuery = transcript.toLowerCase().replace(/\b(mám|ako|čo|kedy|kde|je|na|v|do|z|s|o|k|pre|za)\b/g, '').trim();
+      const searchQuery = cleanQuery.length > 2 ? cleanQuery : transcript;
+
+      const results = fuse.search(searchQuery);
       if (results.length > 0) {
         const topResult: any = results[0].item;
         if (topResult.type === "rule") {

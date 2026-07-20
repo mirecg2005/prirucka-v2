@@ -198,6 +198,55 @@ export const rulesIndex = [
     keywords: "križovatka nedanie prednosti zrážka červená intersection priority",
     type: "rule",
     content: "Pri nedaní prednosti v jazde a stredne ťažkej zrážke skontrolujte zdravotný stav všetkých účastníkov. Ak vozidlá tvoria prekážku a sú pojazdné, po ich nafotení alebo označení ich presuňte na okraj. Vyplňte Správu o nehode, zistite svedkov a nahláste škodu maklérovi Marsh."
+  },
+  {
+    id: "rule-flat-tire",
+    title: "Mám defekt na pneumatike",
+    keywords: "defekt pneu guma koleso flat tire puncture",
+    type: "rule",
+    content: "Ak máte bežný defekt a vozidlo má rezervu, môžete si koleso vymeniť sami alebo zavolať asistenčnú službu. Ak ide o víkend alebo ste v zahraničí, kontaktujte nonstop asistenciu Kooperativa alebo Ayvens. Ak bol poškodený aj disk na výtlku, je potrebné zavolať políciu."
+  },
+  {
+    id: "legal-speed",
+    title: "Rýchlostné limity (Slovensko)",
+    keywords: "rýchlosť limity obec diaľnica speed limits km/h",
+    type: "rule",
+    content: "Maximálna povolená rýchlosť v obci je 50 kilometrov za hodinu. Mimo obce je to 90 kilometrov za hodinu, a na diaľnici 130 kilometrov za hodinu."
+  },
+  {
+    id: "legal-alcohol",
+    title: "Alkohol za volantom",
+    keywords: "alkohol pivo víno promile tolerancia alcohol",
+    type: "rule",
+    content: "Na Slovensku platí prísna nulová tolerancia alkoholu pred jazdou aj počas nej. Akékoľvek množstvo alkoholu v krvi je vážnym porušením predpisov."
+  },
+  {
+    id: "legal-phone",
+    title: "Používanie mobilného telefónu",
+    keywords: "mobil telefón volanie sms písanie phone hands-free",
+    type: "rule",
+    content: "Počas šoférovania je prísne zakázané držať telefón v ruke, písať správy alebo scrollovať. Povolené je výhradne telefonovanie cez systém hands-free."
+  },
+  {
+    id: "legal-zipper",
+    title: "Pravidlo zipsovania",
+    keywords: "zips zipsovanie pruhy kolóna radenie zipper",
+    type: "rule",
+    content: "V mieste, kde sa zbiehajú jazdné pruhy, platí striedavé radenie takzvané zipsovanie. Vodič v pokračujúcom pruhu musí pustiť pred seba jedno vozidlo z končiaceho pruhu."
+  },
+  {
+    id: "legal-rescue",
+    title: "Záchranárska ulička",
+    keywords: "ulička záchranári sanitka kolóna rescue corridor",
+    type: "rule",
+    content: "V dopravnej zápche alebo kolóne vytvorte záchranársku uličku. Vozidlá v ľavom pruhu sa uhýbajú čo najviac doľava, všetky ostatné pruhy doprava, aj na krajnicu. Stred musí ostať voľný."
+  },
+  {
+    id: "legal-winter",
+    title: "Zimné pneumatiky a sneh",
+    keywords: "zima sneh ľad pneumatiky prezutie winter tires",
+    type: "rule",
+    content: "Zimné pneumatiky sú povinné, ak je na ceste súvislá vrstva snehu alebo ľadu. Pred jazdou musíte z vozidla odstrániť sneh a ľad, aby boli okná a značky čisté."
   }
 ];
 
