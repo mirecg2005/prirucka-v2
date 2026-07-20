@@ -2,10 +2,10 @@
 
 import React from "react";
 import { useTTS } from "@/context/TTSContext";
-import { Volume2, X } from "lucide-react";
+import { Volume2, X, Pause, Play } from "lucide-react";
 
 export default function TTSGlobalPlayer() {
-  const { state, stop } = useTTS();
+  const { state, stop, pause, resume } = useTTS();
 
   if (state === "idle") return null;
 
@@ -29,12 +29,33 @@ export default function TTSGlobalPlayer() {
           </div>
         </div>
 
-        <button 
-          onClick={stop}
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-slate-300 hover:text-white"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className="flex items-center gap-2">
+          {state === "playing" ? (
+            <button 
+              onClick={pause}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-slate-300 hover:text-white"
+              title="Pauza"
+            >
+              <Pause className="w-5 h-5 fill-current" />
+            </button>
+          ) : (
+            <button 
+              onClick={resume}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-slate-300 hover:text-white"
+              title="Pokračovať"
+            >
+              <Play className="w-5 h-5 fill-current ml-1" />
+            </button>
+          )}
+          
+          <button 
+            onClick={stop}
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-slate-300 hover:text-white"
+            title="Zavrieť"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
       </div>
     </div>

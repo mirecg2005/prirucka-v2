@@ -114,6 +114,9 @@ const skPhoneticRules: PhoneticRule[] = [
   { pattern: /\b1\.5\s*m\b/g, replacement: 'jeden a pol metra' },
   { pattern: /\b1\s*m\b/g, replacement: 'jeden meter' },
   { pattern: /\btel\.\s*č\./gi, replacement: 'telefónne číslo' },
+  { pattern: /\bmin\./g, replacement: 'minimálne' },
+  { pattern: /&/g, replacement: 'a' },
+  { pattern: /časť I\./g, replacement: 'časť 1' },
 ];
 
 /**

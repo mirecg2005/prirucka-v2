@@ -17,7 +17,7 @@ const dict = {
     
     docs_h: "Potrebné doklady",
     docs_intro: "Pred jazdou sa uistite, že máte pri sebe:",
-    doc_1: "Vodičský preukaz", doc_2: "Osvedčenie (OEV časť I)", doc_3: "Potvrdenie o PZP", doc_4: "Doklad o STK a EK", doc_5: "Občiansky preukaz",
+    doc_1: "Vodičský preukaz", doc_2: "Osvedčenie (OEV časť I., malý TP)", doc_3: "Potvrdenie o PZP", doc_4: "Doklad o STK a EK", doc_5: "Občiansky preukaz",
     lights_h: "Pozor:", lights_p: "Povinnosť celodenného svietenia (stretávacie alebo denné LED).",
     
     speed_h: "Rýchlosť", speed_city: "Obec:", speed_city_val: "50", speed_out: "Mimo obce:", speed_out_val: "90", speed_hwy: "Diaľnica:", speed_hwy_val: "130", speed_unit: "km/h",
@@ -43,7 +43,7 @@ const dict = {
     
     docs_h: "Required Documents",
     docs_intro: "Make sure you have:",
-    doc_1: "Driver's license", doc_2: "Vehicle registration (Part I)", doc_3: "Proof of insurance (PZP)", doc_4: "MOT/Emission test", doc_5: "ID card",
+    doc_1: "Driver's license", doc_2: "Vehicle registration (Part 1)", doc_3: "Proof of insurance (PZP)", doc_4: "MOT/Emission test", doc_5: "ID card",
     lights_h: "Attention:", lights_p: "Mandatory daytime running lights.",
     
     speed_h: "Speed Limits", speed_city: "City:", speed_city_val: "50", speed_out: "Outside:", speed_out_val: "90", speed_hwy: "Highway:", speed_hwy_val: "130", speed_unit: "km/h",

@@ -124,11 +124,12 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
     let processedText = applyPhoneticRules(text, targetLang);
 
     // Rozdelime text na kratsie vety pre mobily (napr. podla bodiek a novych riadkov)
-    // pridali sme | ako separator, mozeme ho vyuzit aj na "..."
+    // pridali sme | ako separator, vynechavame bodku aby ju necital ako slovo "bodka"
     const chunks = processedText
       .replace(/\.\.\./g, '|')
-      .replace(/\./g, '.|')
-      .replace(/!/g, '!|')
+      .replace(/\.(?!\d)/g, '| ')
+      .replace(/!/g, '| ')
+      .replace(/\?/g, '| ')
       .replace(/\n/g, '|')
       .split('|')
       .map(s => s.trim())
