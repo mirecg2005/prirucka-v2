@@ -174,8 +174,8 @@ export default function Home() {
         {/* Informačné Kategórie */}
         <div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-             <SectionCard title={language === 'sk' ? 'Základné Pravidlá' : 'Basic Rules'} icon={BookOpen} accentColor="blue" onClick={() => router.push('/section/rules')} />
-             <SectionCard title={language === 'sk' ? 'Zákonné Pravidlá a Pokuty' : 'Legal Rules & Fines'} icon={Scale} accentColor="yellow" onClick={() => router.push('/section/rules#legal')} />
+             <SectionCard title={language === 'sk' ? 'Základné pravidlá a riešenie pokút' : 'Basic Rules & Fines'} icon={BookOpen} accentColor="blue" onClick={() => router.push('/section/rules')} />
+             <SectionCard title={language === 'sk' ? 'Zákonné Pravidlá' : 'Legal Rules'} icon={Scale} accentColor="yellow" onClick={() => router.push('/section/legal')} />
              <SectionCard title={language === 'sk' ? 'Tankovanie (aj Zahraničie)' : 'Fueling (& Abroad)'} icon={Droplet} accentColor="green" onClick={() => router.push('/section/fuel')} />
              
              <SectionCard title={language === 'sk' ? 'Poistné Udalosti' : 'Insurance Claims'} icon={ShieldCheck} accentColor="green" onClick={() => router.push('/section/insurance')} />
