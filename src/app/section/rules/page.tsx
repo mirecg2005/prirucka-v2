@@ -23,9 +23,8 @@ const dict = {
 
     fines_h2: "Riešenie Pokút",
     fines_s1_h: "Doručenie pokuty", fines_s1_p: "Pokuta je doručená spoločnosti Lidl ako držiteľovi vozidla.",
-    fines_s2_h: "Identifikácia", fines_s2_p: "Oddelenie Mobility identifikuje vodiča a pošle výzvu na úhradu.",
-    fines_s3_h: "Úhrada", fines_s3_p: "Zamestnanec musí pokutu bezodkladne uhradiť (pokuty@lidl.sk).",
-    fines_warn_h: "Dôležité upozornenie", fines_warn_p: "Ak zamestnanec pokutu neuhradí, suma mu bude stiahnutá zo mzdy.",
+    fines_s2_h: "Identifikácia", fines_s2_p: "Oddelenie Mobility identifikuje vodiča a pošle výzvu na úhradu. (pokuty@lidl.sk).",
+    fines_s3_h: "Úhrada", fines_s3_p: "Zamestnanec o úhrade pokuty bezodkladne informuje zaslaním potvrdenia o úhrade na (pokuty@lidl.sk)",
 
     calc_h: "Kalkulačka Pokút", calc_desc: "Odhadovaná bloková pokuta za rýchlosť (SR).",
     calc_in: "V obci (limity 50)", calc_out: "Mimo obce", calc_over: "Prekročenie o:", calc_res_lbl: "Odhadovaná pokuta",
@@ -45,9 +44,8 @@ const dict = {
 
     fines_h2: "Fine Resolution",
     fines_s1_h: "Delivery", fines_s1_p: "Fine delivered to Lidl as the vehicle owner.",
-    fines_s2_h: "Identification", fines_s2_p: "Mobility Dept identifies driver and sends a payment request.",
-    fines_s3_h: "Payment", fines_s3_p: "Employee must pay the fine immediately (pokuty@lidl.sk).",
-    fines_warn_h: "Important Warning", fines_warn_p: "Failure to pay will result in salary deduction.",
+    fines_s2_h: "Identification", fines_s2_p: "Mobility Dept identifies the driver and sends a payment request (pokuty@lidl.sk).",
+    fines_s3_h: "Payment", fines_s3_p: "The employee must immediately inform about the fine payment by sending a confirmation to (pokuty@lidl.sk)",
 
     calc_h: "Fine Calculator", calc_desc: "Estimated speeding block fine (SK).",
     calc_in: "Urban area (limit 50)", calc_out: "Outside urban area", calc_over: "Exceeded by:", calc_res_lbl: "Estimated Fine",
@@ -186,11 +184,6 @@ export default function RulesPage() {
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t.fines_s3_p}</p>
                 </li>
               </ol>
-              
-              <div className="bg-rose-50 dark:bg-rose-900/20 p-4 rounded-xl border border-rose-100 dark:border-rose-800/50">
-                <h4 className="font-bold text-rose-800 dark:text-rose-400 text-xs uppercase mb-1 flex items-center gap-1"><AlertTriangle className="w-3.5 h-3.5 no-tts" /> {t.fines_warn_h}</h4>
-                <p className="text-xs text-rose-600 dark:text-rose-300">{t.fines_warn_p}</p>
-              </div>
             </div>
 
             {/* KALKULACKA */}
