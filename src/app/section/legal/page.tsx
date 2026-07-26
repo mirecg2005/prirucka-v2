@@ -75,7 +75,7 @@ export default function LegalPage() {
     >
       <div className="flex items-center gap-3 mb-8 bg-yellow-50 dark:bg-yellow-950/30 p-4 rounded-xl border border-yellow-200 dark:border-yellow-900/50 shadow-sm">
         <Scale className="w-8 h-8 text-yellow-600 dark:text-yellow-400 no-tts flex-shrink-0" />
-        <p className="text-sm font-medium text-yellow-800 dark:text-yellow-300">
+        <p className="text-base font-medium text-yellow-800 dark:text-yellow-300">
           {t.intro}
         </p>
       </div>
@@ -95,22 +95,30 @@ export default function LegalPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-            <div className="bg-rose-600 rounded-2xl p-5 shadow-lg relative overflow-hidden text-white md:col-span-1">
-              <div className="absolute right-[-20px] top-[-20px] opacity-10">
-                <AlertTriangle className="w-40 h-40 no-tts" />
-              </div>
-              <div className="relative z-10">
-                <span className="bg-rose-400/30 text-[10px] text-rose-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-rose-400/20">
-                  🚫 {t.alc_h} & {t.phone_h}
+            <div className="flex flex-col gap-3 md:col-span-1">
+              <div className="bg-rose-600 rounded-2xl p-4 shadow-lg text-white flex-1 flex flex-col justify-center">
+                <span className="bg-rose-400/30 text-[10px] text-rose-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-rose-400/20 self-start mb-2">
+                  🚫 {t.alc_h}
                 </span>
-                <div className="mt-4 mb-4">
-                  <p className="text-3xl font-black text-white mb-1 leading-none">0,0 ‰</p>
-                  <p className="text-xs text-rose-100">{t.alc_p}</p>
+                <p className="text-3xl font-black text-white leading-none mb-1">0,0 ‰</p>
+                <p className="text-xs text-rose-100">{t.alc_p}</p>
+              </div>
+
+              <div className="bg-orange-500 rounded-2xl p-4 shadow-lg text-white flex-1 flex flex-col justify-center">
+                <span className="bg-orange-400/30 text-[10px] text-orange-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-orange-400/20 self-start mb-2">
+                  📱 {t.phone_h}
+                </span>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center gap-2 text-green-100 font-bold"><span className="no-tts">✓</span> {t.phone_ok}</div>
+                  <div className="flex items-center gap-2 text-red-900 font-bold"><span className="no-tts">✗</span> {t.phone_no}</div>
                 </div>
-                <div className="bg-rose-700/50 p-3 rounded-xl backdrop-blur-sm text-xs">
-                  <div className="flex items-center gap-2 mb-1 text-green-300 font-bold"><span className="no-tts">✓</span> {t.phone_ok}</div>
-                  <div className="flex items-center gap-2 text-rose-200 font-bold"><span className="no-tts">✗</span> {t.phone_no}</div>
-                </div>
+              </div>
+
+              <div className="bg-amber-400 rounded-2xl p-4 shadow-lg text-amber-950 flex-1 flex flex-col justify-center">
+                <span className="bg-amber-300/50 text-[10px] text-amber-900 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-amber-500/20 self-start mb-2">
+                  💡 {t.lights_h}
+                </span>
+                <p className="text-xs font-medium text-amber-900">{t.lights_p}</p>
               </div>
             </div>
 
@@ -156,9 +164,7 @@ export default function LegalPage() {
                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>{t.doc_4}</li>
                 <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>{t.doc_5}</li>
               </ul>
-              <div className="mt-3 bg-slate-50 dark:bg-slate-700/50 p-2 rounded-lg text-[10px] text-slate-500 dark:text-slate-400 border border-slate-100 dark:border-slate-600">
-                <strong>{t.lights_h}</strong> {t.lights_p}
-              </div>
+
             </InteractiveTTSWrapper>
 
             <InteractiveTTSWrapper className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
