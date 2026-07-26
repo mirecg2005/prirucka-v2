@@ -19,7 +19,7 @@ const dict = {
     rule3_h: "Zamykanie", rule3_p: "Pri každom opustení vozidla je užívateľ povinný ho riadne uzamknúť a vziať si kľúč.",
     rule4_h: "Čistota", rule4_p: "Udržujte čistotu. Čistenie interiéru na náklady spol. Lidl je zakázané.",
     rule5_h: "Poistenie", rule5_p: "Vozidlo je poistené. Poistenie sa nevzťahuje na súkromné veci vo vozidle.",
-    rule6_h: "Parkovacia politika", rule6_p: "Pre parkovaciu politiku v Bratislave (PAAS) stačí predložiť Dohodu o používaní služobného vozidla a Splnomocnenie o používaní vozidla na súkromné účely. Mimo Bratislavy je postup individuálny.",
+    rule6_h: "Parkovacia politika", rule6_p: "Pre parkovaciu politiku (PAAS) stačí predložiť Dohodu o používaní služobného vozidla a Splnomocnenie o používaní vozidla na súkromné účely.",
 
     fines_h2: "Riešenie Pokút",
     fines_s1_h: "Doručenie pokuty", fines_s1_p: "Pokuta je doručená spoločnosti Lidl ako držiteľovi vozidla.",
@@ -41,7 +41,7 @@ const dict = {
     rule3_h: "Locking", rule3_p: "Always lock the vehicle and take the key.",
     rule4_h: "Cleanliness", rule4_p: "Keep it clean. Interior cleaning at Lidl's expense is prohibited.",
     rule5_h: "Insurance", rule5_p: "Vehicle is insured. Private belongings are not covered.",
-    rule6_h: "Parking Policy", rule6_p: "For Bratislava parking (PAAS), provide the Vehicle Use Agreement and Power of Attorney. Outside Bratislava, the process varies.",
+    rule6_h: "Parking Policy", rule6_p: "For parking policy (PAAS), provide the Vehicle Use Agreement and Power of Attorney.",
 
     fines_h2: "Fine Resolution",
     fines_s1_h: "Delivery", fines_s1_p: "Fine delivered to Lidl as the vehicle owner.",
