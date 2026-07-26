@@ -26,7 +26,7 @@ const dict = {
     phone_h: "Mobilný Telefón", phone_ok: "Povolené: Hands-free", phone_no: "Zakázané: Držanie v ruke, písanie.",
     
     equip_h: "Povinná výbava (kufor)",
-    equip_1: "Autolekárnička", equip_2: "Výstražný trojuholník", equip_3: "Reflexná vesta", equip_4: "Opravná/lepiaca sada, ak je použitá, treba si novú opravnú/lepiacu sadu objednať v servise BMW.",
+    equip_1: "Autolekárnička", equip_2: "Výstražný trojuholník", equip_3: "Reflexná vesta", equip_4: "Opravná/lepiaca sada, ak je použitá, treba sa objednať na kontrolu pneumatiky do BestDrive a objednať si novú opravnú/lepiacu sadu.",
 
     acc_lanes_h: "Jazda v pruhoch", acc_zip_h: "Zipsovanie", acc_zip_p: "Striedavé radenie pri zbiehaní pruhov.", acc_rescue_h: "Záchranárska ulička", acc_rescue_p: "Ľavý pruh vľavo, ostatné vpravo. Stred voľný.",
     acc_vulnerable_h: "Zraniteľní účastníci", acc_cyc_h: "Cyklisti", acc_cyc_p: "Odstup: nad 50km/h min 1.5m, inak 1m.", acc_ped_h: "Chodci", acc_ped_p: "Prednosť na priechode (okrem električiek).",
@@ -52,7 +52,7 @@ const dict = {
     phone_h: "Mobile Phone", phone_ok: "Allowed: Hands-free", phone_no: "Prohibited: Holding, typing.",
     
     equip_h: "Mandatory Equipment",
-    equip_1: "First aid kit", equip_2: "Warning triangle", equip_3: "Reflective vest", equip_4: "Repair/glue kit, if used, order a new one at a BMW service center.",
+    equip_1: "First aid kit", equip_2: "Warning triangle", equip_3: "Reflective vest", equip_4: "Repair/glue kit, if used, book a tire check at BestDrive and order a new repair kit.",
 
     acc_lanes_h: "Driving in Lanes", acc_zip_h: "Zipper merging", acc_zip_p: "Alternate merging where lanes converge.", acc_rescue_h: "Rescue lane", acc_rescue_p: "Left lane moves left, others right. Center clear.",
     acc_vulnerable_h: "Vulnerable Users", acc_cyc_h: "Cyclists", acc_cyc_p: "Distance: over 50km/h min 1.5m, otherwise 1m.", acc_ped_h: "Pedestrians", acc_ped_p: "Right of way on pedestrian crossings (except trams).",
