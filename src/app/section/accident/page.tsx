@@ -102,9 +102,6 @@ export default function AccidentPage() {
           <span className="no-tts bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">4</span>
           {t('accident.step4.title')}
         </h2>
-        <p className="text-sm text-foreground/90 mb-4">
-          {t('accident.step4.desc')}
-        </p>
         
         <ul className="space-y-3 text-sm text-foreground/90 mb-6">
           <li className="flex items-start gap-2">

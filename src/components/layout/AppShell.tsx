@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import BottomNav from "./BottomNav";
 import TTSGlobalPlayer from "./TTSGlobalPlayer";
+import PhoneCallInterceptor from "./PhoneCallInterceptor";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
       <TTSGlobalPlayer />
       <BottomNav />
+      <PhoneCallInterceptor />
     </div>
   );
 }

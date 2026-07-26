@@ -19,17 +19,19 @@ const dict = {
     break_call_sk: "Slovensko", break_call_abroad: "Zahraničie",
     break_p2: "Zabezpečíme odťah a náhradné vozidlo.",
     break_flat: "Defekt",
-    break_flat_1: "Cez víkend: Oprava v najbližšom pneuservise (úhrada súkromne, preplatenie cez Concur).",
-    break_flat_2: "V zahraničí / Nepojazdné: Kontaktujte asistenčnú službu Kooperativa.",
-    break_flat_4: "Poškodený disk: Asistencia a riešiť ako poistnú udalosť.",
+    break_flat_1: "Volať Ayvens Hotlinku +421 904 333 230 / 0850 888 777.",
+    break_flat_2: "Ak nevedia zabezpečiť odťah alebo servis, tak volať Kooperativu (SK: 18 118, Zahraničie: +421 2 5729 9999).",
+    break_flat_3: "Pri riešení individuálne na mieste, vypýtať si bločik a preplatiť cez CONCUR. Následne sa objednať do BestDrive.",
+    break_flat_4: "",
     break_keys: "Zabuchnuté kľúče",
-    break_keys_1: "Otvoriť cez MyBMW app.",
-    break_keys_2: "Kľúčová služba (Kooperativa).",
-    break_keys_3: "Urgentne: Odd. Mobility / Ayvens.",
+    break_keys_1: "Pokúsiť sa otvoriť cez appku a vybrať kľúče.",
+    break_keys_2: "Alternatívne objednať kľúčovú službu cez Kooperativu.",
+    break_locked_3: "",
     break_lost: "Strata kľúčov",
-    break_lost_1: "Zložiť EČV, otvoriť cez appku.",
+    break_lost_1: "Pokúsiť sa otvoriť cez appku a vybrať osobné veci.",
     break_lost_2: "Komunikovať s odd. Mobility.",
     break_lost_3: "Prevoz do BMW, blokácia kľúča.",
+    break_lost_4: "",
 
     // Maint
     maint_h2: "Údržba Vozidla",
@@ -87,12 +89,12 @@ const dict = {
 
     // Service booking
     sec1_title: "Objednávka do servisu",
-    sec1_desc: "Pre objednanie servisu, prezutia, opravy alebo výmeny skla volajte Ayvens:",
-    sk_contact: "Slovensko (08:00 - 17:00)",
+    sec1_desc: "Pre objednanie servisu, prezutia, opravy volajte Ayvens:",
+    sk_contact: "Slovensko",
     abroad_contact: "Zahraničie",
     call: "Volať",
     sec2_title: "Čelné sklo",
-    sec2_desc: "Vždy riešiť cez Ayvens v autosklo Hornet.",
+    sec2_desc: "Vždy riešiť ako poistnú udalosť cez Marsh v autosklo Hornet. (Tel: +421 902 966 689, E-mail: autoskody@marsh.com)",
     sec3_title: "Servisní partneri",
     bmw: "BMW & MINI:", bmw_partners: "BMW Servis, Marco Car, Bosch",
     vw: "Volkswagen:", vw_partners: "Todos, Dexter, Marco Car",
@@ -107,17 +109,19 @@ const dict = {
     break_call_sk: "Slovakia", break_call_abroad: "Abroad",
     break_p2: "We will arrange towing and a replacement vehicle.",
     break_flat: "Flat Tire",
-    break_flat_1: "Weekend: Nearest tire service (reimburse via Concur).",
-    break_flat_2: "Abroad / Immobile: Kooperativa assistance.",
-    break_flat_4: "Damaged rim: Assistance and resolve as insurance claim.",
+    break_flat_1: "Call Ayvens Hotline +421 904 333 230 / 0850 888 777.",
+    break_flat_2: "If no tow available, call Kooperativa (SK: 18 118, Abroad: +421 2 5729 9999).",
+    break_flat_3: "If resolved individually, ask for receipt and reimburse via Concur. Then book BestDrive.",
+    break_flat_4: "",
     break_keys: "Locked Keys",
     break_keys_1: "Open via MyBMW app.",
     break_keys_2: "Locksmith (Kooperativa).",
-    break_keys_3: "Urgent: Mobility Dept / Ayvens.",
+    break_locked_3: "",
     break_lost: "Lost Keys",
-    break_lost_1: "Remove plates, open via app.",
+    break_lost_1: "Try to open via the app and take out personal belongings.",
     break_lost_2: "Communicate with Mobility Dept.",
     break_lost_3: "Transport to BMW, block key.",
+    break_lost_4: "",
 
     maint_h2: "Vehicle Maintenance",
     
@@ -173,12 +177,12 @@ const dict = {
     maint_bolt_p: "Adapter usually in the trunk. If missing and BestDrive cannot loosen wheels, order a new one at BMW.",
 
     sec1_title: "Service Booking",
-    sec1_desc: "To book service, tire change, repair or windshield replacement, call Ayvens:",
-    sk_contact: "Slovakia (08:00 - 17:00)",
+    sec1_desc: "To book service, tire change, repair call Ayvens:",
+    sk_contact: "Slovakia",
     abroad_contact: "Abroad",
     call: "Call",
     sec2_title: "Windshield",
-    sec2_desc: "Always resolve via Ayvens at Hornet Auto Glass.",
+    sec2_desc: "Always resolve as insurance claim via Marsh at Hornet Auto Glass. (Tel: +421 902 966 689, E-mail: autoskody@marsh.com)",
     sec3_title: "Service Partners",
     bmw: "BMW & MINI:", bmw_partners: "BMW Service, Marco Car, Bosch",
     vw: "Volkswagen:", vw_partners: "Todos, Dexter, Marco Car",
@@ -306,9 +310,10 @@ export default function ServicePage() {
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_flat}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">
-                <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_1}</li>
-                <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_2}</li>
-                <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_4}</li>
+                {t.break_flat_1 && <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_1}</li>}
+                {t.break_flat_2 && <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_2}</li>}
+                {t.break_flat_3 && <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_3}</li>}
+                {t.break_flat_4 && <li className="flex gap-3"><span className="text-rose-500 text-lg leading-none">•</span> {t.break_flat_4}</li>}
               </ul>
             </div>
             
@@ -321,9 +326,9 @@ export default function ServicePage() {
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_keys}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">
-                <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_keys_1}</li>
-                <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_keys_2}</li>
-                <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_keys_3}</li>
+                {t.break_keys_1 && <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_keys_1}</li>}
+                {t.break_keys_2 && <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_keys_2}</li>}
+                {t.break_locked_3 && <li className="flex gap-3"><span className="text-amber-500 text-lg leading-none">•</span> {t.break_locked_3}</li>}
               </ul>
             </div>
             
@@ -336,9 +341,10 @@ export default function ServicePage() {
               </div>
               <h4 className="font-extrabold text-lg text-slate-800 dark:text-white mb-4">{t.break_lost}</h4>
               <ul className="text-xs space-y-3 text-slate-600 dark:text-slate-300 font-medium">
-                <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_1}</li>
-                <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_2}</li>
-                <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_3}</li>
+                {t.break_lost_1 && <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_1}</li>}
+                {t.break_lost_2 && <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_2}</li>}
+                {t.break_lost_3 && <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_3}</li>}
+                {t.break_lost_4 && <li className="flex gap-3"><span className="text-slate-500 text-lg leading-none">•</span> {t.break_lost_4}</li>}
               </ul>
             </div>
           </div>
