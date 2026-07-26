@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import SectionLayout from "@/components/layout/SectionLayout";
-import { BookOpen, AlertTriangle, FileCheck2, ExternalLink, ShieldCheck, Scale, Car, Activity, Zap, Calculator } from "lucide-react";
+import { BookOpen, AlertTriangle, FileCheck2, ExternalLink, ShieldCheck, Scale, Car, Activity, Zap } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import TTSButton from "@/components/tools/TTSButton";
 import InteractiveTTSWrapper from "@/components/tools/InteractiveTTSWrapper";
@@ -60,40 +60,7 @@ export default function RulesPage() {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const toggleAccordion = (id: string) => setOpenAccordion(openAccordion === id ? null : id);
 
-  const [speedZone, setSpeedZone] = useState("obec");
-  const [speedVal, setSpeedVal] = useState(10);
 
-  const fineResult = useMemo(() => {
-    const isObec = speedZone === 'obec';
-    let fine = "0 €";
-    const val = speedVal;
-
-    if (isObec) {
-      if (val <= 6) fine = "napomenutie";
-      else if (val <= 10) fine = "do 20 €";
-      else if (val <= 15) fine = "40 €";
-      else if (val <= 20) fine = "60 €";
-      else if (val <= 25) fine = "90 €";
-      else if (val <= 30) fine = "140 €";
-      else if (val <= 35) fine = "200 €";
-      else if (val <= 40) fine = "280 €";
-      else if (val <= 45) fine = "360 €";
-      else if (val <= 50) fine = "440 €";
-      else fine = "500 - 1000 €";
-    } else {
-      if (val <= 6) fine = "napomenutie";
-      else if (val <= 15) fine = "do 20 €";
-      else if (val <= 20) fine = "40 €";
-      else if (val <= 25) fine = "60 €";
-      else if (val <= 30) fine = "120 €";
-      else if (val <= 35) fine = "160 €";
-      else if (val <= 40) fine = "200 €";
-      else if (val <= 45) fine = "300 €";
-      else if (val <= 50) fine = "400 €";
-      else fine = "500 - 1000 €";
-    }
-    return fine;
-  }, [speedZone, speedVal]);
 
   return (
     <SectionLayout 
@@ -164,7 +131,7 @@ export default function RulesPage() {
             <div className="scale-75 origin-right no-tts"><TTSButton contentId="tts-fines-content" /></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             
             <div id="tts-fines-content" className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
               <ol className="relative border-l-2 border-blue-200 dark:border-blue-800 space-y-6 ml-3 mb-6">
@@ -186,47 +153,7 @@ export default function RulesPage() {
               </ol>
             </div>
 
-            {/* KALKULACKA */}
-            <div className="bg-blue-600 rounded-2xl p-5 shadow-lg relative overflow-hidden text-white flex flex-col justify-between">
-              <div className="absolute right-[-20px] top-[-20px] opacity-10">
-                <Calculator className="w-40 h-40 no-tts" />
-              </div>
-              <div className="relative z-10">
-                <span className="bg-blue-400/30 text-[10px] text-blue-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-blue-400/20">
-                  💶 {t.calc_h}
-                </span>
-                <p className="text-xs text-blue-100 mt-3 mb-5">{t.calc_desc}</p>
-                
-                <div className="flex gap-4 mb-6 bg-blue-700/50 p-2 rounded-xl backdrop-blur-sm">
-                  <label className="flex-1 text-center cursor-pointer">
-                    <input type="radio" name="speed-zone" value="obec" checked={speedZone === 'obec'} onChange={() => setSpeedZone('obec')} className="peer hidden" />
-                    <div className="peer-checked:bg-white peer-checked:text-blue-700 text-blue-200 text-xs font-bold py-2 px-3 rounded-lg transition-colors">
-                      {t.calc_in}
-                    </div>
-                  </label>
-                  <label className="flex-1 text-center cursor-pointer">
-                    <input type="radio" name="speed-zone" value="mimo" checked={speedZone === 'mimo'} onChange={() => setSpeedZone('mimo')} className="peer hidden" />
-                    <div className="peer-checked:bg-white peer-checked:text-blue-700 text-blue-200 text-xs font-bold py-2 px-3 rounded-lg transition-colors">
-                      {t.calc_out}
-                    </div>
-                  </label>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between items-end">
-                    <span className="text-xs text-blue-200 uppercase font-bold tracking-wider">{t.calc_over}</span>
-                    <span className="text-2xl font-black text-white">{speedVal} km/h</span>
-                  </div>
-                  <input type="range" min="1" max="80" value={speedVal} onChange={(e) => setSpeedVal(parseInt(e.target.value))} className="w-full h-2 bg-blue-400/30 rounded-lg appearance-none cursor-pointer accent-white" />
-                </div>
-                
-                <div className="bg-white p-4 rounded-xl text-center shadow-inner">
-                  <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-1">{t.calc_res_lbl}</p>
-                  <p className="text-4xl font-black text-rose-600">{fineResult}</p>
-                  <p className="text-[9px] text-slate-400 mt-2">{t.calc_note}</p>
-                </div>
-              </div>
-            </div>
+
 
           </div>
         </section>
