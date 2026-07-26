@@ -125,19 +125,19 @@ export default function LegalPage() {
                 
                 <div className="grid grid-cols-3 gap-3 mt-4">
                   <div className="bg-indigo-700/50 p-3 rounded-xl backdrop-blur-sm flex flex-col items-center justify-center text-center">
-                    <span className="text-[10px] text-indigo-200 uppercase font-bold mb-1">{t.speed_city}</span>
-                    <span className="text-2xl font-black">{t.speed_city_val}</span>
-                    <span className="text-[9px] text-indigo-300">{t.speed_unit}</span>
+                    <span className="text-xs text-indigo-200 uppercase font-bold mb-1">{t.speed_city}</span>
+                    <span className="text-5xl font-black text-white">{t.speed_city_val}</span>
+                    <span className="text-xs text-indigo-300 mt-1">{t.speed_unit}</span>
                   </div>
                   <div className="bg-indigo-700/50 p-3 rounded-xl backdrop-blur-sm flex flex-col items-center justify-center text-center">
-                    <span className="text-[10px] text-indigo-200 uppercase font-bold mb-1">{t.speed_out}</span>
-                    <span className="text-2xl font-black">{t.speed_out_val}</span>
-                    <span className="text-[9px] text-indigo-300">{t.speed_unit}</span>
+                    <span className="text-xs text-indigo-200 uppercase font-bold mb-1">{t.speed_out}</span>
+                    <span className="text-5xl font-black text-white">{t.speed_out_val}</span>
+                    <span className="text-xs text-indigo-300 mt-1">{t.speed_unit}</span>
                   </div>
-                  <div className="bg-indigo-700/50 p-3 rounded-xl backdrop-blur-sm flex flex-col items-center justify-center text-center border-2 border-indigo-400/30">
-                    <span className="text-[10px] text-indigo-200 uppercase font-bold mb-1">{t.speed_hwy}</span>
-                    <span className="text-2xl font-black">{t.speed_hwy_val}</span>
-                    <span className="text-[9px] text-indigo-300">{t.speed_unit}</span>
+                  <div className="bg-indigo-700/50 p-3 rounded-xl backdrop-blur-sm flex flex-col items-center justify-center text-center border-2 border-indigo-400/30 shadow-[0_0_15px_rgba(129,140,248,0.3)]">
+                    <span className="text-xs text-indigo-200 uppercase font-bold mb-1">{t.speed_hwy}</span>
+                    <span className="text-5xl font-black text-white">{t.speed_hwy_val}</span>
+                    <span className="text-xs text-indigo-300 mt-1">{t.speed_unit}</span>
                   </div>
                 </div>
               </div>
