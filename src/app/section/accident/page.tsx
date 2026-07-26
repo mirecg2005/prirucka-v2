@@ -175,11 +175,11 @@ export default function AccidentPage() {
         <span className="sr-only">{t('accident.deadline.tts')}</span>
 
         <div className="grid grid-cols-2 gap-3 mb-5 no-tts">
-          <div className="bg-muted p-3 rounded-xl border border-border text-center flex flex-col items-center justify-center min-h-[80px]">
-            <span className="text-sm font-semibold">{t('accident.deadline.sk')}</span>
+          <div className="bg-red-50 dark:bg-red-950/30 p-3 rounded-xl border border-red-200 dark:border-red-900/50 text-center flex flex-col items-center justify-center min-h-[80px] shadow-sm">
+            <span className="text-base sm:text-lg font-black text-red-600 dark:text-red-400 leading-tight">{t('accident.deadline.sk')}</span>
           </div>
-          <div className="bg-muted p-3 rounded-xl border border-border text-center flex flex-col items-center justify-center min-h-[80px]">
-            <span className="text-sm font-semibold">{t('accident.deadline.abroad')}</span>
+          <div className="bg-orange-50 dark:bg-orange-950/30 p-3 rounded-xl border border-orange-200 dark:border-orange-900/50 text-center flex flex-col items-center justify-center min-h-[80px] shadow-sm">
+            <span className="text-base sm:text-lg font-black text-orange-600 dark:text-orange-400 leading-tight">{t('accident.deadline.abroad')}</span>
           </div>
         </div>
 
