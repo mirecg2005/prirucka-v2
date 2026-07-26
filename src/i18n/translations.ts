@@ -5,8 +5,8 @@ export const translations = {
     // Header & Nav
     'app.title': 'Príručka vodiča',
     'nav.home': 'Domov',
-    'nav.search': 'Hľadať',
-    'nav.emergency': 'Núdza',
+    'nav.new_car': 'Nové Vozidlo',
+    'nav.mybmw': 'Aplikácia MY BMW',
     'nav.contacts': 'Kontakty',
     
     // Search
@@ -39,6 +39,7 @@ export const translations = {
     'accident.step1.bullet2': 'Zapnite výstražné svetlá.',
     'accident.step1.bullet3': 'Oblečte si reflexnú vestu (ešte vo vozidle).',
     'accident.step1.bullet4': 'Umiestnite výstražný trojuholník v bezpečnej vzdialenosti.',
+    'accident.step1.bullet5': 'Nezdržujte sa vo vozidle, čo najrýchlejšie sa vzdiaľte od vozidla, na diaľnici až za ochranné zvodidlá.',
     'accident.step2.title': 'Zdravie a Záchranné zložky',
     'accident.step2.desc': 'Zistite, či je niekto zranený. Ak áno, okamžite volajte:',
     'accident.step3.title': 'Kedy volať políciu (158)?',
@@ -46,6 +47,7 @@ export const translations = {
     'accident.step3.bullet2': 'Odhadovaná škoda presahuje 3 990 €.',
     'accident.step3.bullet3': 'Poškodil sa majetok tretej osoby.',
     'accident.step3.bullet4': 'Vinník nehody je neznámy, ušiel, alebo je opitý.',
+    'accident.step3.bullet5': 'Vždy pri zrážke so zverou!',
     'accident.step4.title': 'Správna dokumentácia',
     'accident.step4.desc': 'Ak nevoláte políciu, musíte všetko správne zdokumentovať:',
     'accident.step4.doc1': 'Vyplniť Správu o nehode:',
@@ -61,7 +63,6 @@ export const translations = {
     'accident.pdf.btn': 'Digitálna správa o nehode',
     'accident.pdf.desc': 'Vyplniť priamo v mobile (easf.eu)',
     'accident.step5.title': 'Nahlásenie poisťovni a Lehoty',
-    'accident.step5.desc': 'Posledným kritickým krokom je nahlásenie udalosti maklérovi MARSH.',
     'accident.deadline.sk': 'Nehoda na Slovensku',
     'accident.deadline.abroad': 'Nehoda v zahraničí',
     'accident.deadline.warning': 'Nemeškajte. Po uplynutí týchto lehôt môže poisťovňa krátiť poistné plnenie.',

@@ -43,6 +43,10 @@ export default function AccidentPage() {
             <span className="text-red-500 mt-0.5 no-tts">•</span>
             <span>{t('accident.step1.bullet4')}</span>
           </li>
+          <li className="flex items-start gap-2">
+            <span className="text-red-500 mt-0.5 no-tts">•</span>
+            <span>{t('accident.step1.bullet5')}</span>
+          </li>
         </ul>
       </div>
 
@@ -90,6 +94,10 @@ export default function AccidentPage() {
           <li className="flex items-start gap-2">
             <ShieldAlert className="w-4 h-4 text-primary shrink-0 mt-0.5 no-tts" />
             <span>{t('accident.step3.bullet4')}</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <ShieldAlert className="w-4 h-4 text-primary shrink-0 mt-0.5 no-tts" />
+            <span>{t('accident.step3.bullet5')}</span>
           </li>
         </ul>
       </div>
