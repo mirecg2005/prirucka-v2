@@ -83,7 +83,7 @@ const dict = {
     maint_fluids_h: "Voda do ostrekovačov",
     maint_fluids_p: "DL dostupné na oddelení mobility. LC dostupné u technikov skladu. V servise sa nedopĺňajú na náklady firmy.",
     maint_adblue_h: "AdBlue",
-    maint_adblue_p: "Dopĺňať na Shell/OMV kartou. V servise je dopĺňanie prísne zakázané!",
+    maint_adblue_p: "Dopĺňať na Shell/OMV tankovacou kartou. V servise je dopĺňanie prísne zakázané!",
     maint_bolt_h: "Poistný šrób",
     maint_bolt_p: "Nástavec sa zvyčajne nachádza v kufri. Ak chýba a BestDrive nevie povoliť kolesá, treba objednať nový v servise BMW.",
 
