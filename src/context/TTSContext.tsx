@@ -74,7 +74,7 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
     return voices.find(v => v.lang.startsWith(lang)) || voices[0];
   };
 
-  const playNextChunk = useCallback(() => {
+  const playNextChunk = useCallback(function playNext() {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
     if (isPausedRef.current) return;
     
@@ -101,7 +101,7 @@ export function TTSProvider({ children }: { children: React.ReactNode }) {
       
       setTimeout(() => {
         if (isSpeakingRef.current && !isPausedRef.current) {
-          playNextChunk();
+          playNext();
         }
       }, 800); // 800ms pauza medzi vetami
     };
