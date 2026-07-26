@@ -209,7 +209,7 @@ export default function LegalPage() {
                 <div>
                   <h4 className="text-xs font-bold text-amber-600 dark:text-amber-400">{t.acc_hwy_title}</h4>
                   <p className="text-[10px] text-slate-600 dark:text-slate-300 mb-2">{t.acc_hwy_p}</p>
-                  <a href="https://eznamka.sk" target="_blank" rel="noreferrer" className="inline-block text-[10px] bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-1 rounded font-bold transition-colors no-tts">
+                  <a href="https://eznamka.sk/selfcare/modification/select/select-vignettes/?operation=Check" target="_blank" rel="noreferrer" className="inline-block text-[10px] bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-1 rounded font-bold transition-colors no-tts">
                     <ExternalLink className="w-3 h-3 inline mr-1" />{t.check_vignette}
                   </a>
                 </div>
