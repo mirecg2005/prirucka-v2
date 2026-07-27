@@ -190,9 +190,9 @@ export default function ContactsPage() {
             <div className="flex items-center justify-between bg-white/10 p-4 rounded-2xl backdrop-blur-md border border-white/10 shadow-inner group/btn hover:bg-white/20 transition-colors">
               <div>
                 <p className="text-[10px] font-bold text-red-200 uppercase tracking-wide">{t.police_sk}</p>
-                <p className="text-lg font-black mt-1 text-white drop-shadow-sm">158</p>
+                <p className="text-3xl font-black mt-1 text-white drop-shadow-sm">112</p>
               </div>
-              <a href="tel:158" className="bg-white text-red-700 font-extrabold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+              <a href="tel:112" className="bg-white text-red-700 font-extrabold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <PhoneCall className="w-4 h-4 no-tts" /> {t.call}
               </a>
             </div>
