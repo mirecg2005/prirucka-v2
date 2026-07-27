@@ -89,10 +89,7 @@ export default function FuelPage() {
             <CheckCircle2 className="w-40 h-40 no-tts" />
           </div>
           <div className="relative z-10">
-            <span className="bg-emerald-400/30 text-[10px] text-emerald-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-emerald-400/20">
-              ✔️ {t.allowed_badge}
-            </span>
-            <h3 className="text-xl font-bold mt-3 mb-4">{t.allowed_title}</h3>
+            <h3 className="text-xl font-bold mt-1 mb-4">{t.allowed_title}</h3>
             
             <ul className="space-y-3 text-sm text-emerald-50">
               <li className="flex items-start gap-2 bg-emerald-700/50 p-3 rounded-xl backdrop-blur-sm">
@@ -117,10 +114,7 @@ export default function FuelPage() {
             <XCircle className="w-40 h-40 no-tts" />
           </div>
           <div className="relative z-10">
-            <span className="bg-rose-400/30 text-[10px] text-rose-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-rose-400/20">
-              ❌ {t.forbidden_badge}
-            </span>
-            <h3 className="text-xl font-bold mt-3 mb-4">{t.forbidden_title}</h3>
+            <h3 className="text-xl font-bold mt-1 mb-4">{t.forbidden_title}</h3>
             
             <ul className="space-y-3 text-sm text-rose-50">
               <li className="flex items-start gap-2 bg-rose-700/50 p-3 rounded-xl backdrop-blur-sm">
@@ -149,10 +143,7 @@ export default function FuelPage() {
             <Globe className="w-40 h-40 no-tts" />
           </div>
           <div className="relative z-10">
-            <span className="bg-blue-400/30 text-[10px] text-blue-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-blue-400/20">
-              🌍 {t.abroad_badge}
-            </span>
-            <h3 className="text-xl font-bold mt-3 mb-2">{t.abroad_title}</h3>
+            <h3 className="text-xl font-bold mt-1 mb-2">{t.abroad_title}</h3>
             <p className="text-sm text-blue-100 mb-5 max-w-2xl">{t.abroad_desc}</p>
             
             <h4 className="text-sm font-bold text-blue-200 mb-3 uppercase tracking-wider">{t.partners_title}</h4>
@@ -193,10 +184,7 @@ export default function FuelPage() {
                <AlertTriangle className="w-6 h-6 text-white no-tts" />
             </div>
             <div>
-              <span className="bg-amber-400/30 text-[10px] text-amber-100 uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-amber-400/20 inline-block mb-2">
-                ⚠️ {t.loss_badge}
-              </span>
-              <h3 className="text-lg font-bold mb-1">{t.loss_title}</h3>
+              <h3 className="text-lg font-bold mt-1 mb-1">{t.loss_title}</h3>
               <p className="text-sm text-amber-50 leading-relaxed">
                 {t.loss_desc}
               </p>
