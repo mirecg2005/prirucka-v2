@@ -105,6 +105,10 @@ export default function FuelPage() {
                 <span className="text-emerald-300 mt-0.5 font-bold no-tts">✓</span>
                 <span>{t.allowed_3}</span>
               </li>
+              <li className="flex items-start gap-2 bg-emerald-700/50 p-3 rounded-xl backdrop-blur-sm">
+                <span className="text-emerald-300 mt-0.5 font-bold no-tts">✓</span>
+                <span>{t.allowed_4}</span>
+              </li>
             </ul>
           </div>
         </div>
