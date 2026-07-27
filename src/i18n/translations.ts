@@ -133,6 +133,7 @@ export const translations = {
     'fuel.forbidden.1': 'Prémiové palivá (V-Power, MaxxMotion a pod.) pokiaľ nie sú vyslovene schválené.',
     'fuel.forbidden.2': 'Nákup tovaru v predajni (občerstvenie, káva, cigarety, alkohol).',
     'fuel.forbidden.3': 'Platba za iné služby nesúvisiace s prevádzkou auta.',
+    'fuel.forbidden.4': 'Nákup dialničnej známky na súkromné účely.',
     'fuel.loss.title': 'Strata palivovej karty',
     'fuel.loss.desc': 'V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility alebo správcu (Ayvens), aby kartu zablokovali.',
 
@@ -278,6 +279,7 @@ export const translations = {
     'fuel.forbidden.1': 'Premium fuels (V-Power, MaxxMotion, etc.) unless explicitly approved.',
     'fuel.forbidden.2': 'Purchasing store items (snacks, coffee, cigarettes, alcohol).',
     'fuel.forbidden.3': 'Payment for other services unrelated to vehicle operation.',
+    'fuel.forbidden.4': 'Purchase of a highway vignette for private purposes.',
     'fuel.loss.title': 'Fuel Card Loss',
     'fuel.loss.desc': 'In case of loss or theft of the card, immediately contact the Mobility department or fleet manager (Ayvens) to block the card.',
 

@@ -19,6 +19,7 @@ const dict = {
     forbidden_1: "Prémiové palivá (V-Power, MaxxMotion a pod.) pokiaľ nie sú vyslovene schválené.",
     forbidden_2: "Nákup tovaru v predajni (občerstvenie, káva, cigarety, alkohol).",
     forbidden_3: "Platba za iné služby nesúvisiace s prevádzkou auta.",
+    forbidden_4: "Nákup dialničnej známky na súkromné účely.",
     loss_title: "Strata palivovej karty",
     loss_badge: "Kritická udalosť",
     loss_desc: "V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility alebo správcu (Ayvens), aby kartu zablokovali.",
@@ -46,6 +47,7 @@ const dict = {
     forbidden_1: "Premium fuels (V-Power, MaxxMotion, etc.) unless explicitly approved.",
     forbidden_2: "Purchasing goods in the store (snacks, coffee, cigarettes, alcohol).",
     forbidden_3: "Payment for other services unrelated to car operation.",
+    forbidden_4: "Purchase of a highway vignette for private purposes.",
     loss_title: "Fuel card loss",
     loss_badge: "Critical event",
     loss_desc: "In case of loss or theft of the card, immediately contact the Mobility department or the administrator (Ayvens) to block the card.",
@@ -132,6 +134,10 @@ export default function FuelPage() {
               <li className="flex items-start gap-2 bg-rose-700/50 p-3 rounded-xl backdrop-blur-sm">
                 <span className="text-rose-300 mt-0.5 font-bold no-tts">✗</span>
                 <span>{t.forbidden_3}</span>
+              </li>
+              <li className="flex items-start gap-2 bg-rose-700/50 p-3 rounded-xl backdrop-blur-sm">
+                <span className="text-rose-300 mt-0.5 font-bold no-tts">✗</span>
+                <span>{t.forbidden_4}</span>
               </li>
             </ul>
           </div>
