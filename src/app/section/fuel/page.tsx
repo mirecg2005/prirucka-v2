@@ -12,9 +12,8 @@ const dict = {
     allowed_title: "Povolené úkony",
     allowed_badge: "Dovolené",
     allowed_1: "Tankovanie štandardných pohonných hmôt (Nafta/Benzín).",
-    allowed_2: "Doplnenie kvapaliny do ostrekovačov.",
-    allowed_3: "Umývanie vozidla MAX.1x týždenne najlacnejší program.",
-    allowed_4: "Nákup dialničnej známky na služobné účely tankovacou kartou.",
+    allowed_2: "Umývanie vozidla MAX.1x týždenne najlacnejší program.",
+    allowed_3: "Nákup dialničnej známky na služobné účely tankovacou kartou.",
     forbidden_title: "Zakázané úkony",
     forbidden_badge: "Prísny zákaz",
     forbidden_1: "Prémiové palivá (V-Power, MaxxMotion a pod.) pokiaľ nie sú vyslovene schválené.",
@@ -40,9 +39,8 @@ const dict = {
     allowed_title: "Allowed actions",
     allowed_badge: "Permitted",
     allowed_1: "Refueling standard fuels (Diesel/Petrol).",
-    allowed_2: "Topping up washer fluid.",
-    allowed_3: "Car wash MAX. 1x per week, cheapest program.",
-    allowed_4: "Purchase of a highway vignette for business purposes using a fuel card.",
+    allowed_2: "Car wash MAX. 1x per week, cheapest program.",
+    allowed_3: "Purchase of a highway vignette for business purposes using a fuel card.",
     forbidden_title: "Forbidden actions",
     forbidden_badge: "Strictly prohibited",
     forbidden_1: "Premium fuels (V-Power, MaxxMotion, etc.) unless explicitly approved.",
@@ -106,10 +104,6 @@ export default function FuelPage() {
               <li className="flex items-start gap-2 bg-emerald-700/50 p-3 rounded-xl backdrop-blur-sm">
                 <span className="text-emerald-300 mt-0.5 font-bold no-tts">✓</span>
                 <span>{t.allowed_3}</span>
-              </li>
-              <li className="flex items-start gap-2 bg-emerald-700/50 p-3 rounded-xl backdrop-blur-sm">
-                <span className="text-emerald-300 mt-0.5 font-bold no-tts">✓</span>
-                <span>{t.allowed_4}</span>
               </li>
             </ul>
           </div>
