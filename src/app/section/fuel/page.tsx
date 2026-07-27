@@ -154,7 +154,7 @@ export default function FuelPage() {
                   <h4 className="font-bold text-white mb-1">{t.omv_title}</h4>
                   <p className="text-xs text-blue-100/80 mb-3">{t.omv_desc}</p>
                 </div>
-                <a href="http://www.routex.com" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 font-bold px-3 py-2 rounded-lg text-xs hover:bg-blue-50 flex items-center justify-center gap-2 transition-colors w-full">
+                <a href="https://routex.com/sitefinder/" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 font-bold px-3 py-2 rounded-lg text-xs hover:bg-blue-50 flex items-center justify-center gap-2 transition-colors w-full">
                   <ExternalLink className="w-4 h-4 no-tts" />
                   {t.omv_btn}
                 </a>
