@@ -135,7 +135,7 @@ export const translations = {
     'fuel.forbidden.3': 'Platba za iné služby nesúvisiace s prevádzkou auta.',
     'fuel.forbidden.4': 'Nákup dialničnej známky na súkromné účely.',
     'fuel.loss.title': 'Strata palivovej karty',
-    'fuel.loss.desc': 'V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility alebo správcu (Ayvens), aby kartu zablokovali.',
+    'fuel.loss.desc': 'V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility na mobilita@lidl.sk, aby kartu zablokovali.',
 
     // Service
     'service.title': 'SERVIS A ÚDRŽBA',
@@ -281,7 +281,7 @@ export const translations = {
     'fuel.forbidden.3': 'Payment for other services unrelated to vehicle operation.',
     'fuel.forbidden.4': 'Purchase of a highway vignette for private purposes.',
     'fuel.loss.title': 'Fuel Card Loss',
-    'fuel.loss.desc': 'In case of loss or theft of the card, immediately contact the Mobility department or fleet manager (Ayvens) to block the card.',
+    'fuel.loss.desc': 'In case of loss or theft of the card, immediately contact the Mobility department at mobilita@lidl.sk to block the card.',
 
     // Service
     'service.title': 'SERVICE & MAINTENANCE',

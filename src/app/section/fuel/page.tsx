@@ -22,7 +22,7 @@ const dict = {
     forbidden_4: "Nákup dialničnej známky na súkromné účely.",
     loss_title: "Strata palivovej karty",
     loss_badge: "Kritická udalosť",
-    loss_desc: "V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility alebo správcu (Ayvens), aby kartu zablokovali.",
+    loss_desc: "V prípade straty alebo krádeže karty okamžite kontaktujte oddelenie Mobility na mobilita@lidl.sk, aby kartu zablokovali.",
     abroad_title: "Tankovanie v zahraničí",
     abroad_badge: "Mimo SR",
     abroad_desc: "Platia rovnaké pravidlá ako na Slovensku. Vždy preferujte bezhotovostné platby prostredníctvom pridelenej karty.",
@@ -50,7 +50,7 @@ const dict = {
     forbidden_4: "Purchase of a highway vignette for private purposes.",
     loss_title: "Fuel card loss",
     loss_badge: "Critical event",
-    loss_desc: "In case of loss or theft of the card, immediately contact the Mobility department or the administrator (Ayvens) to block the card.",
+    loss_desc: "In case of loss or theft of the card, immediately contact the Mobility department at mobilita@lidl.sk to block the card.",
     abroad_title: "Refueling abroad",
     abroad_badge: "Outside SR",
     abroad_desc: "The same rules apply as in Slovakia. Always prefer cashless payments using the assigned card.",
@@ -186,7 +186,12 @@ export default function FuelPage() {
             <div>
               <h3 className="text-lg font-bold mt-1 mb-1">{t.loss_title}</h3>
               <p className="text-sm text-amber-50 leading-relaxed">
-                {t.loss_desc}
+                {t.loss_desc.split('mobilita@lidl.sk').map((part, i, arr) => (
+                  <span key={i}>
+                    {part}
+                    {i < arr.length - 1 && <a href="mailto:mobilita@lidl.sk" className="font-bold text-white underline hover:text-amber-200 transition-colors">mobilita@lidl.sk</a>}
+                  </span>
+                ))}
               </p>
             </div>
           </div>
